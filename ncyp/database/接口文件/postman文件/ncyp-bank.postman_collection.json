@@ -1,0 +1,258 @@
+{
+	"info": {
+		"name": "ncyp-bank",
+		"_postman_id": "0880a888-c14d-fb8b-94c4-767dd008e548",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8182/biz/user/login.do",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userName\":\"admin\",\n\t\"userPwd\":\"Ceying2018\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8182/biz/user/login.do",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8182",
+					"path": [
+						"biz",
+						"user",
+						"login.do"
+					]
+				},
+				"description": "登录"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8182/biz/menu/queryMenu",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n\t\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8182/biz/menu/queryMenu",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8182",
+					"path": [
+						"biz",
+						"menu",
+						"queryMenu"
+					]
+				},
+				"description": "系统菜单查询"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8182/biz/AgreementTemplate/add.do",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\n\t\"功能\":\"新增\",\n\t\"bankId\":\"0_100001000013\",\n\t\"corecompanyId\":\"0_100002000002\",\n\t\"templateContent\":\"dioajiwe9uqejfa0duapjda780532jno9fad\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8182/biz/AgreementTemplate/add.do",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8182",
+					"path": [
+						"biz",
+						"AgreementTemplate",
+						"add.do"
+					]
+				},
+				"description": "三方协议模板新增"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8182/biz/AgreementTemplate/del.do",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"功能\":\"删除\",\n\t\"urid\":\"1ca890a68f6544c2a3df96ef3fbefe7f\"\n\t\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8182/biz/AgreementTemplate/del.do",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8182",
+					"path": [
+						"biz",
+						"AgreementTemplate",
+						"del.do"
+					]
+				},
+				"description": "三方协议模板删除"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8182/biz/AgreementTemplate/del.do",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"功能\":\"查询单条\",\n\t\"urid\":\"1ca890a68f6544c2a3df96ef3fbefe7f\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8182/biz/AgreementTemplate/selectOne.do",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8182",
+					"path": [
+						"biz",
+						"AgreementTemplate",
+						"selectOne.do"
+					]
+				},
+				"description": "三方协议模板查询"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8182/biz/AgreementTemplate/selectOne.do",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"功能\":\"修改\",\n\t\"urid\":\"4eafabf243d94225a6920269b7364d66\",\n\t\"templatecontent\":\"三方协议模板修改\",\n\t\"description\":\"测试\",\n\t\"rowversion\":\"1\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8182/biz/AgreementTemplate/edit.do",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8182",
+					"path": [
+						"biz",
+						"AgreementTemplate",
+						"edit.do"
+					]
+				},
+				"description": "三方协议模板修改"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8182/biz/AgreementTemplate/selectList.do",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"功能\":\"查询多条\",\n\t\"urid\":\"1ca890a68f6544c2a3df96ef3fbefe7f\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8182/biz/AgreementTemplate/selectList.do",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8182",
+					"path": [
+						"biz",
+						"AgreementTemplate",
+						"selectList.do"
+					]
+				},
+				"description": "三方协议模板查询多条信息"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8182/biz/AgreementTemplate/selectList.do",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\t\"功能\":\"发布\",\n\t\"signs\":\"asdfaiodfjoeij384743uuiouf8eujwerkijfi\",\n\t\"urid\":\"4eafabf243d94225a6920269b7364d66\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8182/biz/AgreementTemplate/send.do",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8182",
+					"path": [
+						"biz",
+						"AgreementTemplate",
+						"send.do"
+					]
+				},
+				"description": "三方协议模板发布"
+			},
+			"response": []
+		}
+	]
+}

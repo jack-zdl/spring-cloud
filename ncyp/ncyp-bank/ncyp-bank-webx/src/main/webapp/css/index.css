@@ -1,0 +1,188 @@
+/*事项*/
+.task{
+	display: inline-block;
+	float: right;
+	margin-left: 10px;
+}
+.num{
+	border-radius: 50%;
+	color: #FFFFFF !important;
+	background-color: #E06A6E;
+	font-size: 10px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	text-align: center;
+	line-height: 15px;
+	vertical-align: 2px;
+}
+.point{
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background-color: #E06A6E;
+	vertical-align: 2px;
+	margin-right: 10px;
+	margin-left: 4px;
+}
+/*卡片列表*/
+.bank_list{
+	margin-top: 10px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.inner_wrap{
+	position: absolute;
+	left: 0px;
+	transition: left .8s ease-out;
+}
+.bank{
+	display: inline-block;
+	float: left;
+	margin-left: 20px;
+    background-color:#f9fbfd;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px  #DDDDDD; 
+    position: relative;
+}
+.bank:nth-child(1){
+    margin-left: 0px;
+}
+/*单个卡片*/
+.total_money{
+	height: 100px;
+	background-color: #e5e7ee;
+	color: #788295;
+	font-size: 22px;
+	text-align: center;
+	position: relative;
+}
+.refresh{
+   position: absolute;
+   bottom: 10px; 
+   right: 20px; 
+   cursor: pointer;
+}
+.banklogo{
+   text-align: center;
+}
+.card_id{
+	border-bottom: 1px solid #dadadc;
+	margin: 0 20px;
+	font-size: 18px;
+	position: relative;
+}
+.card_num span{
+	font-size: 16px;
+}
+.card_num p{
+	margin-top: 10px;
+}
+.card_id img{
+  margin-top: -34px;
+}
+.card_num{
+	position: absolute;
+	bottom:40px;
+	left: 0px;
+	color: #717071;
+}
+.function{
+	overflow: hidden;
+	margin: 20px;
+	position: relative;
+}
+
+.function_inner{
+	position: absolute;
+	left: 0px;
+	transition: left .4s ease-out;
+}
+.function .function_block{
+   float: left;
+}
+
+.function .function_block span{
+	display: inline-block;
+	padding-bottom: 20px;
+	margin-right: 10px;
+	color: #24a978;
+	font-size: 15px;
+}
+.function span a:hover{
+   text-decoration: underline;
+}
+/*按钮*/
+.control {
+	position: absolute;
+	width: 100%;
+	bottom: 30px;
+	left: 0px;
+}
+.control .left{
+	width: 20%;
+	text-align: right;
+}
+.control .right{
+	width: 20%;
+}
+.control .middle{
+	width: 60%;
+	text-align: center;
+}
+.control > div{
+   display: inline-block;
+}
+.control i{
+	font-size: 26px;
+	vertical-align: middle;
+	color: #888889;
+	cursor: pointer;
+}
+.control span{
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+    border-radius: 50%;
+	background-color: #dcdcdd;
+	margin: 0 10px;
+}
+.control span.hover{
+	background-color: #9f9fa0;
+}
+/*底部*/
+.bottom_bar{
+	text-align: center;
+	color: #383a39;
+	font-size: 12px;
+	margin: 20px;
+}
+.bottom_bar a{
+	display: inline-block;
+	border-right: 1px solid #383a39;
+	padding: 0 10px;
+	height: 12px;
+	line-height: 12px;
+	cursor: pointer;
+}
+.bottom_bar a:hover{
+	text-decoration: underline;
+}
+.bottom_bar a:nth-child(3){
+	border-right: none;
+}
+/*左右翻转银行*/
+.prev{
+	position: absolute;
+	left: 10px;
+	cursor: pointer;
+	display: none;
+}
+.next{
+	position: absolute;
+	right: 10px;
+	cursor: pointer;
+}

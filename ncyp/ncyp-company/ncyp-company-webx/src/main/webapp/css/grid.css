@@ -1,0 +1,61 @@
+/*标签*/
+.operation_block{
+	margin: 10px 30px;
+	font-size: 14px;
+    color: #6b7482;
+}
+.operation_block > div{
+	margin: 10px 0;
+}
+.operation_block span{
+	font-size: 14px;
+	color: #595757;
+	font-weight: 500;
+	margin: 0 10px;
+	padding: 4px 8px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.operation_block span:hover{
+	background-color: #ecf5ec;
+}
+.operation_block span.active{
+	background-color: #8fccae;
+	color: white;
+}
+/*日历*/
+.time_block{
+
+}
+.time_block > div:nth-child(1){
+	margin-left: 10px;
+}
+.time_block > div{
+	display: inline-block;
+	width: 200px;
+}
+.time_line{
+	width: 30px !important;
+	margin: 0 10px;
+	height: 1px;
+	background-color: #dadadc;
+	margin-bottom: 6px;
+}
+.time_block button{
+	border: 1px solid #dadadc;
+	background-color: white;
+	border-radius: 10px;
+	height: 28px;
+	width: 80px;
+	margin-left: 40px;
+}
+.time_block button:hover{
+	border: 1px solid #F7FBF8;
+	background-color: #F7FBF8;
+
+}
+/*图表*/
+.grid_wrap{
+	overflow: hidden;
+}
+

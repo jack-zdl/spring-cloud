@@ -1,0 +1,96 @@
+/*切换按钮*/
+.tab_account button{
+    background-color: #FFFFFF;
+    border: 1px solid #DADADA;
+    border-radius: 10px;
+    color: #555555;
+    padding: 2px 15px;
+    margin: 10px 20px;
+}
+.tab_account button:hover{
+    background-color: #EBEBEB;
+}
+.tab_account button.active{
+    background-color: #24A978;
+    color: #FFFFFF;
+}
+/*账户列表*/
+.tab_two{
+    visibility: hidden;
+    position: absolute;
+    top: 92px;
+    width: 100%;
+}
+.account_list ul li{
+    margin-bottom: 10px;
+}
+.pay_account,.bank_account {
+    border-bottom: 1px solid #DADADA;
+}
+.account_list{
+    margin:  20px 0;
+}
+.card_wrap{
+    width: 360px;
+    height: 80px;
+    position: relative;
+    margin: auto;
+    border: 1px solid #FFFFFF;
+}
+.bank_account .card_wrap{
+    height: 100px;
+}
+.card_wrap:hover{
+    border: 1px solid #DADADA;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #DADADA;
+}
+.card_wrap p{
+    color: #6b7482;
+    font-size: 12px;
+    word-break:keep-all;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    width: 320px;
+}
+.card_wrap span{
+    word-break:keep-all;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    color: #6b7482;
+}
+.card_wrap img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.card_wrap span:nth-of-type(1){
+    position: absolute;
+    width: 250px;
+    top: 15px;
+    left: 80px;
+}
+.card_wrap span:nth-of-type(2){
+    position: absolute;
+    width: 250px;
+    top: 40px;
+    left: 80px;
+}
+.card_wrap .fa{
+    color: #DADADA;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: none;
+}
+.account_operate_btn > div{
+    margin-top: 20px;
+}

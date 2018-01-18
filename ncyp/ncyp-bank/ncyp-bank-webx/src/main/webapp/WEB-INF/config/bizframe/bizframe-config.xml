@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bizframeConfig id="bizframe">
+	 <bizframe-beans id="beans">
+	 		  <include file="jar:/resource/bizframe-bean-config.xml"
+				   class="com.ceying.chx.util.context.BizframeContext"/>
+	 </bizframe-beans>
+	 
+	 <bizframe-params id="params">
+	 	      <include file="jar:/resource/bizframe-param-config.xml" 
+			       class="com.ceying.chx.util.context.BizframeContext"/>
+	 </bizframe-params>
+</bizframeConfig>

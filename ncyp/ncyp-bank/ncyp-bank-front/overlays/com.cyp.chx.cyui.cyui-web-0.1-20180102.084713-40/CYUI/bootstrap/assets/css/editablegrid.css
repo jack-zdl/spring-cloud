@@ -1,0 +1,49 @@
+.tab_title table{
+    min-width: 100%;
+
+}
+.tab_data tr td{
+    padding: 5px 5px;
+    color: #333333;
+    border-left: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+    white-space: normal;
+}
+
+table .Wdate,table .text_box,table .combo_text{
+    border: none !important;
+}
+.tr_bg{
+    border: 2px solid #99CADE !important;
+    padding: 0px !important;
+    /*background: white;*/
+}
+
+.tr_bg:first-of-type{
+    border-left: none !important;
+}
+.tr_bg:last-of-type{
+    border-right: none !important;
+}
+.nodata_row td{
+    padding: 0px !important;
+    border: none !important;
+}
+td{
+    position: relative;
+}
+.hid_td{
+    display: none;
+    padding: 0px !important;
+}
+.del_line{
+    position: absolute;
+    top: 15px;
+    left: -5px;
+    background-color: #000000;
+    width: 101%;
+    height: 2px;
+}
+.hasDel{
+    cursor: not-allowed;
+}

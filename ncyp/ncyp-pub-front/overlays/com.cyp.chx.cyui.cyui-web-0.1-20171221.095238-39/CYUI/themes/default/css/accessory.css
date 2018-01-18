@@ -1,0 +1,42 @@
+ul,li{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+.show_image_body{
+	background-color: #EEF3F7;
+}
+.thumbnails_list{
+	width: 100%;
+	overflow: auto;
+	background: #FFFFFF;
+	padding: 10px 0;
+}
+.thumbnails_list ul{
+   margin: 0 auto;
+   border-bottom: 1px solid #EEF3F7;
+   height: 85px;
+}
+.thumbnails_list li{
+	float: left;
+	width: 60px;
+	margin: 10px;
+	cursor: pointer;
+	border-bottom: 2px solid #FFFFFF;
+}
+.thumbnails_list li:hover{
+	border-bottom: 2px solid #23B9D2;
+}
+.thumbnails_list li img{
+	width: 100%;
+}
+.show_image{
+	margin-top: 10px;
+	width: 100%;
+	padding: 30px;
+}
+.show_image img{
+	display: block;
+	margin: 0 auto;
+	width: 400px;	
+}

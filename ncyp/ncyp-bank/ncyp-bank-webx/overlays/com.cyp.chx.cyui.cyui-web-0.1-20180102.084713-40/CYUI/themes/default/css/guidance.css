@@ -1,0 +1,17 @@
+.new_guide_wrap{
+    border-style: solid;
+    border-color: #000;
+    border-width: 1000px 2000px 1000px 2000px;
+    opacity: 0.6;
+    position: absolute;     
+    box-sizing:content-box !important;
+    z-index:10000;
+}
+.guide_one{
+   margin-left:100%;
+   margin-top:200%;
+}
+.guide_two{
+   margin-left: 40%;
+   margin-top:35%;
+}

@@ -1,0 +1,54 @@
+ul,li{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+.combo_text{
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    border: 1px solid #D5D5D5;
+    position: relative;
+    overflow: visible;
+}
+.combo_text input{
+    border: none;
+    height: 28px;
+    vertical-align: top;
+    width: 100%;
+}
+.combo_text span{
+    display: inline-block;
+    width: 17px;
+    background-image: url("../img/combo_arrow.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #F5F5F5;
+    border-left:1px solid #D5D5D5;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.item_list{
+    width: 100%;
+    max-height: 200px;
+    border: 1px solid #D5D5D5;
+    position: absolute;
+    overflow: auto;
+    background-color: white;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    z-index: 999;
+}
+.item_active{
+    background-color: #A0C9E6;
+    color: white;
+}
+.item_list li{
+    padding: 3px 5px !important;
+}
+.item_display{
+    display: none;
+}

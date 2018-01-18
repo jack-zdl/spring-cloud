@@ -1,0 +1,113 @@
+.login_wrap{
+
+
+    position: relative;
+    z-index: 999;
+}
+.bottom_color{
+    background-color: #2E8FCE;
+    position: absolute;
+    height: 146px;
+    width: 100%;
+    left: 0px;
+}
+.login_form{
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.login_form img{
+    position: absolute;
+    width: 1000px;
+    height: 500px;
+    top: 0px;
+    left: 0px;
+}
+.login_box{
+    position: absolute;
+    background-color: white;
+    top: 90px;
+    left: 530px;
+    width: 300px;
+}
+.login_box i{
+    color: #B3B4B4;
+    font-size: 20px;
+    vertical-align: middle;
+}
+.passward .fa-lock{
+    font-size: 25px !important;
+}
+.userName,.userPwd{
+    border: 1px solid #DDDDDD;
+    height: 40px;
+    margin-top: 20px;;
+    width: 300px;
+    padding: 0 10px;
+}
+.tenant .text_box{
+    height: 40px !important;
+    margin-top: 20px;
+}
+.other{
+    margin: 10px 0;
+}
+.userName input, .userPwd input, .tenant .input_text{
+    border: none !important;
+    line-height: 38px;
+    height: 38px;
+    padding: 0 10px;
+    width: 255px;
+    outline: none;
+}
+
+.login_box .col-xs-4 input{
+    vertical-align: -2px;
+}
+.login_box .col-xs-4{
+    font-size: 12px;
+    line-height: 30px;
+    color: #A2A7AF;
+    padding: 0px;
+}
+.login_box .col-xs-4 a{
+    color: inherit;
+}
+.login_box .col-xs-4 a:hover{
+    color: #46c4cc;
+    text-decoration: none;
+    cursor: pointer;
+}
+.forget{
+    text-align: center;
+}
+.register{
+    text-align: right;
+}
+.login_title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #4C97CC;
+    display: block;
+    font-family: '黑体';
+}
+.login_btn{
+    width: 300px;
+    background-color: #4C97CC;
+    color: white;
+    padding: 7px;
+    font-size: 18px;
+    border: none;
+    /*letter-spacing: 30px;*/
+}
+
+.login_box #message{
+    color: red;
+    font-size: 13px;
+}

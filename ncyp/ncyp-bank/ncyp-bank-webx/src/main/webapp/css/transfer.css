@@ -1,0 +1,51 @@
+.confirm_info{
+    position: relative;
+    color: #555555;
+    font-size: 16px;
+    border-top: 1px solid #dadadc;
+    margin: 40px 80px;
+    height: 200px;
+}
+.confirm_info img{
+    position: relative;
+    top: -25px;
+    left: 25px;
+}
+.confirm_info span{
+    position: absolute;
+    right: 20px;
+    top: -22px;
+    font-size: 13px;
+}
+.confirm_info p {
+    margin-left: 20px;
+}
+.confirm_info h5{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.confirm_info_detail{
+    position: absolute;
+    top: 30px;
+}
+.arrow{
+    text-align: center;
+}
+.arrow img{
+    margin-top: 30px;
+}
+.pay_result{
+    font-size: 25px;
+    color: #858A8E;
+    text-align: center;
+}
+.pay_result_block{
+  text-align: center;
+}
+.pay_result_block img{
+    margin: 50px 0;
+}
+.pay_result_block p{
+    margin-bottom: 50px;
+}

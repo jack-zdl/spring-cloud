@@ -1,0 +1,131 @@
+{
+	"id": "2194587e-93ff-0c00-820b-d156d94a0ae9",
+	"name": "cpi",
+	"description": "",
+	"order": [
+		"45cced9f-6eb0-b28a-e237-ec83029a133f",
+		"59fa3e22-eda1-56ac-c17e-3a3a90aa3f55",
+		"c79aa1a8-62b5-0cb1-917c-2f1c6aa514a2"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1509958572834,
+	"owner": "1002171",
+	"public": false,
+	"requests": [
+		{
+			"id": "45cced9f-6eb0-b28a-e237-ec83029a133f",
+			"headers": "Content-Type: application/json\nAuthorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTE4NzU3NTYyNDQsInBheWxvYWQiOiJ7XCJ1c2VyTmFtZVwiOlwiYWRtaW5cIixcInBhc3N3b3JkXCI6XCIxMjNcIn0ifQ.9pnWUx7fx6rFRhQAGaNZjfGFz2ammxSNIYb04gU2yaU\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTE4NzU3NTYyNDQsInBheWxvYWQiOiJ7XCJ1c2VyTmFtZVwiOlwiYWRtaW5cIixcInBhc3N3b3JkXCI6XCIxMjNcIn0ifQ.9pnWUx7fx6rFRhQAGaNZjfGFz2ammxSNIYb04gU2yaU",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://localhost:8443/cpi/base/org/list?loginId=admin&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTE4NzU3NTYyNDQsInBheWxvYWQiOiJ7XCJ1c2VyTmFtZVwiOlwiYWRtaW5cIixcInBhc3N3b3JkXCI6XCIxMjNcIn0ifQ.9pnWUx7fx6rFRhQAGaNZjfGFz2ammxSNIYb04gU2yaU",
+			"queryParams": [
+				{
+					"key": "loginId",
+					"value": "admin",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTE4NzU3NTYyNDQsInBheWxvYWQiOiJ7XCJ1c2VyTmFtZVwiOlwiYWRtaW5cIixcInBhc3N3b3JkXCI6XCIxMjNcIn0ifQ.9pnWUx7fx6rFRhQAGaNZjfGFz2ammxSNIYb04gU2yaU",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1511877988473,
+			"name": "orglist",
+			"description": "",
+			"collectionId": "2194587e-93ff-0c00-820b-d156d94a0ae9",
+			"responses": [],
+			"rawModeData": "{\n\t\"bankId\":\"\",\n\t\"accountspayableId\":\"\"\n}"
+		},
+		{
+			"id": "59fa3e22-eda1-56ac-c17e-3a3a90aa3f55",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://localhost:8443/cpi/base/login",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1512464929743,
+			"name": "login",
+			"description": "",
+			"collectionId": "2194587e-93ff-0c00-820b-d156d94a0ae9",
+			"responses": [],
+			"rawModeData": "{\n\t\"userName\" : \"admin\",\n\t\"password\":\"123456\"\n}"
+		},
+		{
+			"id": "c79aa1a8-62b5-0cb1-917c-2f1c6aa514a2",
+			"headers": "Content-Type: application/json\nAuthorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTIwOTUzMDk5ODMsInBheWxvYWQiOiJ7XCJ1c2VyTmFtZVwiOlwiYWRtaW5cIixcInBhc3N3b3JkXCI6XCIxMjNcIn0ifQ.3AcpQJ_DmTG01PUBThFM3i40de5_x4n2F3ZbB-UarFE\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MTIwOTUzMDk5ODMsInBheWxvYWQiOiJ7XCJ1c2VyTmFtZVwiOlwiYWRtaW5cIixcInBhc3N3b3JkXCI6XCIxMjNcIn0ifQ.3AcpQJ_DmTG01PUBThFM3i40de5_x4n2F3ZbB-UarFE",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://localhost:8443/login",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1512093857858,
+			"name": "security-login",
+			"description": "",
+			"collectionId": "2194587e-93ff-0c00-820b-d156d94a0ae9",
+			"responses": [],
+			"rawModeData": "{\n\t\"userId\" : \"admin\",\n\t\"userName\" : \"admin\",\n\t\"password\":\"123\"\n}"
+		}
+	]
+}

@@ -1,0 +1,130 @@
+.navbar-white{
+    background-color: white;
+    border-bottom: 1px solid #D8D9DC;
+    padding: 0 50px;
+    margin: 0px !important;
+}
+.navbar-white a{
+    font-size: 30px;
+}
+.navbar-white button{
+    width: 100px;
+}
+.body_wrap{
+    background-color: #F5F6F7;
+    padding: 1px;
+}
+.body_wrap h2{
+    text-align: center;
+    margin-top: 50px;
+}
+.body_wrap .ad_des{
+    color: #666666;
+    font-size:18px;
+    text-align: center;
+}
+.input-wrap,.user_info{
+
+    width: 440px;
+    margin: 30px auto;
+}
+.tab_way li{
+    border: 1px solid #D9D9D9;
+    width: 220px;
+    height: 48px;
+    float: left;
+    text-align: center;
+    line-height: 46px;
+    color: #666666;
+    position: relative;
+    cursor: pointer;
+}
+.tab_way .active{
+    border-top: 2px solid #2299EE;
+    border-bottom: 0px;
+    color: #333333;
+}
+.tab_way li div{
+    position: absolute;
+    top: 5px;
+    line-height: normal;
+    left: 70px;
+}
+.tab_way li p{
+    font-size: 11px;
+}
+.tab .form-control,.user_info .form-control{
+    height: 50px;
+    border: 1px solid #D9D9D9;
+}
+.tab_one .input-group{
+    margin: 7px 0;
+
+}
+.tab .input-group-addon,.tab_one .form-control{
+    border-radius: 0px !important;
+}
+.tab .identifyingCode{
+    padding: 0px !important;
+}
+.tab .col-xs-8{
+    margin: 0px;
+    padding: 0px;
+}
+.tab_one ul{
+    margin-bottom: 7px;
+}
+.tab_one button{
+    height: 50px;
+    width: 132px;
+    border: 1px solid #D9D9D9;
+    background-color: white;
+}
+.edit_password .input-group{
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+.tab_two{
+    display: none;
+}
+.tab_two .input-group{
+    width: 100%;
+    margin: 14px 0;
+}
+.input-wrap .next{
+    color: white;
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    line-height: 50px;
+    text-align: center;
+}
+.input-wrap .next,.user_info .confirm{
+    border-radius: 0px;
+    width: 440px;
+    height: 50px;
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: #2299EE;
+    border-color: #2299EE;
+}
+.user_info .confirm{
+    margin: 0 !important;
+}
+.user_info .input-group{
+    margin: 14px 0;
+    width: 100%;
+}
+.user_info .notice{
+    color: #999999;
+    font-size: 11px;
+
+}
+.guidance{
+    color: #2299EE;
+    font-size: 12px;
+    text-decoration: none;
+    padding-top: 10px;
+    display: inline-block;
+}

@@ -1,0 +1,84 @@
+/*重置样式*/
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: '微软雅黑';
+    height: 100%;
+    width: 100%;
+}
+ul,li,p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:focus{
+    outline: 0;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+/*头部栏目 */
+.top_bar{
+    background-color: #24a978;
+    height: 60px;
+    line-height: 60px;
+    color: white;
+    padding: 0 50px;
+}
+.title{
+    font-size: 19px;
+}
+.person,.message{
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+    position: relative;
+}
+.person img{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.message img{
+    vertical-align: middle;
+    margin-right:  20px;
+    margin-top: 16px;
+}
+.user_operate{
+    position: absolute;
+    background-color: white;
+    color: #555555;
+    line-height: 25px;
+    font-size: 12px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #DDDDDD;
+    right: 0px;
+    top: 50px;
+    display: none;
+}
+.user_operate li{
+    padding: 0 15px;
+}
+.user_operate li:hover{
+    color: #1CA978;
+}
+/*主体部分*/
+.body_col_wrap{
+    background-color: #eef1f9;
+    overflow: hidden;
+}
+.main_iframe{
+    border: none;
+    width: 100%;
+}

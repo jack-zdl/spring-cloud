@@ -1,0 +1,21 @@
+.val_Tab{
+    width: 100%;
+    overflow: auto;
+    background-color: white;
+}
+.val_Tab tr td{
+    height: 22px;
+    line-height: 22px;
+    padding: 3px 0;
+}
+.val_Tab tr{
+    background-color: #91B8D0;
+    color: white;
+    border: 3px solid white;
+}
+.val_Tab span{
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    margin-left: 5px;
+}

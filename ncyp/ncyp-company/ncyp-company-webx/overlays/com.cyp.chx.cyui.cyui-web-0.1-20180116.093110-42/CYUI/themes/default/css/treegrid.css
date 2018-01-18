@@ -1,0 +1,26 @@
+.tree_wrap{
+    background-color: white;
+    position: absolute;
+    border: 1px solid #DDDDDD;
+    border-right: none;
+    top: 59px;
+    min-width: 350px;
+}
+.toggle_tree{
+    display: inline-block;
+    width: 25px;
+    border: 1px solid #FFB550;
+    border-radius: 5px 0 0 5px;
+    height: 70px;
+    position: absolute;
+    left: -26px;
+    background-color: #FFB550;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    padding-top: 15px;
+}
+.tree_block{
+    overflow-y: auto;
+    padding: 10px;
+}

@@ -1,0 +1,118 @@
+/*搜索框*/
+.block_search{
+    display: inline-block;
+    float: right;
+    border: 1px solid #dadadc;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0 10px;
+}
+.block_search input{
+    border: none;
+}
+.block_search .fa{
+    color: #dadadc;
+    cursor: pointer;
+}
+/*账户列表*/
+.account_list ul li{
+    margin-bottom: 10px;
+}
+.pay_account,.bank_account {
+    border-bottom: 1px solid #DADADA;
+}
+.account_list{
+    margin:  20px 0;
+}
+.card_wrap{
+    width: 360px;
+    height: 80px;
+    position: relative;
+    margin: auto;
+    border: 1px solid #FFFFFF;
+}
+.bank_account .card_wrap{
+    height: 100px;
+}
+.card_wrap:hover{
+    border: 1px solid #DADADA;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #DADADA;
+}
+.card_wrap p{
+    color: #6b7482;
+    font-size: 12px;
+    word-break:keep-all;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    width: 320px;
+}
+.card_wrap span{
+    word-break:keep-all;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    color: #6b7482;
+}
+.card_wrap img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.card_wrap span:nth-of-type(1){
+    position: absolute;
+    width: 250px;
+    top: 15px;
+    left: 80px;
+}
+.card_wrap span:nth-of-type(2){
+    position: absolute;
+    width: 250px;
+    top: 40px;
+    left: 80px;
+}
+.card_wrap .fa{
+    color: #DADADA;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: none;
+}
+/*分页*/
+.account_page > div{
+    width: 350px;
+    margin: 20px auto;
+    color: #6b7482;
+}
+.account_page i{
+    border: 1px solid #91CDA9;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 23px;
+    text-align: center;
+    border-radius: 50%;
+    color: #91CDA9;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 18px;
+}
+.account_page input{
+    width: 40px;
+    border: 1px solid #dadadc;
+    border-radius: 10px;
+    padding: 0 5px;
+    text-align: center;
+}
+.account_page i:hover{
+    background-color: #91CDA9;
+    color: white;
+    background-color: #91CDA9;
+}

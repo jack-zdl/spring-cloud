@@ -1,0 +1,32 @@
+.operate_btn_list{
+    width:1000px;
+    padding-top: 20px;
+    margin-left: calc( 50% - 500px );
+}
+.operate_btn_list li{
+    margin-bottom: 20px;
+    width: 250px;
+    float: left;
+}
+.operate_btn_list li div{
+    width: 200px;
+    height: 100px;
+    background-color: #EFF1F9;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.operate_btn_list li div:hover{
+    background-color:#E1E7F1;
+}
+.operate_btn_list li p{
+    color: #555555;
+    text-align: left;
+    font-size: 12px;
+}
+.operate_btn_list li div i{
+    color: #8AC8D4;
+    font-size: 50px;
+}

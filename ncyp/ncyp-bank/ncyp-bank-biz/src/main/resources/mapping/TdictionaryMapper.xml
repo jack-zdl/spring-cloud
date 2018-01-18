@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ceying.chx.common.dao.TdictionaryDao">
+  <resultMap id="BaseResultMap" type="TdictionaryEntity">
+    <id column="c_sysname" jdbcType="VARCHAR" property="cSysname" />
+    <id column="l_keyno" jdbcType="INTEGER" property="lKeyno" />
+    <id column="c_keyvalue" jdbcType="VARCHAR" property="cKeyvalue" />
+    <result column="c_caption" jdbcType="VARCHAR" property="cCaption" />
+    <result column="c_modify" jdbcType="CHAR" property="cModify" />
+    <result column="c_memo" jdbcType="VARCHAR" property="cMemo" />
+    <result column="c_english" jdbcType="VARCHAR" property="cEnglish" />
+    <result column="l_order" jdbcType="INTEGER" property="lOrder" />
+  </resultMap>
+
+
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    c_sysname, l_keyno, c_keyvalue, c_caption, c_modify, c_memo, c_english, l_order
+  </sql>
+  <select id="selectByExample" parameterType="TdictionaryEntity" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from tdictionary
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <!-- 根据字典参数查询字典集合-->
+  <select id="list" parameterType="TdictionaryEntity" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tdictionary
+    <trim prefix="WHERE" prefixOverrides="AND |OR ">
+      <if test="cSysname != null ">AND c_sysname=#{cSysname}</if>
+      <if test="lKeyno != null "> AND l_keyno=#{lKeyno}</if>
+      <if test="cKeyvalue != null ">AND c_keyvalue=#{cKeyvalue}</if>
+      <if test="cCaption != null ">AND c_caption=#{cCaption}</if>
+      <if test="cModify != null ">AND c_modiy=#{cModify}</if>
+      <if test="cMemo != null ">AND c_memo=#{cMemo}</if>
+      <if test="cEnglish != null ">AND c_english=#{cEnglish}</if>
+      <if test="lOrder != null">AND l_order=#{lOrder}</if>
+    </trim>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="map" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tdictionary
+    where c_sysname = #{cSysname,jdbcType=VARCHAR}
+      and l_keyno = #{lKeyno,jdbcType=INTEGER}
+      and c_keyvalue = #{cKeyvalue,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from tdictionary
+    where c_sysname = #{cSysname,jdbcType=VARCHAR}
+      and l_keyno = #{lKeyno,jdbcType=INTEGER}
+      and c_keyvalue = #{cKeyvalue,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="TdictionaryEntity">
+    delete from tdictionary
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="TdictionaryEntity">
+    insert into tdictionary (c_sysname, l_keyno, c_keyvalue, 
+      c_caption, c_modify, c_memo, 
+      c_english, l_order)
+    values (#{cSysname,jdbcType=VARCHAR}, #{lKeyno,jdbcType=INTEGER}, #{cKeyvalue,jdbcType=VARCHAR}, 
+      #{cCaption,jdbcType=VARCHAR}, #{cModify,jdbcType=CHAR}, #{cMemo,jdbcType=VARCHAR}, 
+      #{cEnglish,jdbcType=VARCHAR}, #{lOrder,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="TdictionaryEntity">
+    insert into tdictionary
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="cSysname != null">
+        c_sysname,
+      </if>
+      <if test="lKeyno != null">
+        l_keyno,
+      </if>
+      <if test="cKeyvalue != null">
+        c_keyvalue,
+      </if>
+      <if test="cCaption != null">
+        c_caption,
+      </if>
+      <if test="cModify != null">
+        c_modify,
+      </if>
+      <if test="cMemo != null">
+        c_memo,
+      </if>
+      <if test="cEnglish != null">
+        c_english,
+      </if>
+      <if test="lOrder != null">
+        l_order,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="cSysname != null">
+        #{cSysname,jdbcType=VARCHAR},
+      </if>
+      <if test="lKeyno != null">
+        #{lKeyno,jdbcType=INTEGER},
+      </if>
+      <if test="cKeyvalue != null">
+        #{cKeyvalue,jdbcType=VARCHAR},
+      </if>
+      <if test="cCaption != null">
+        #{cCaption,jdbcType=VARCHAR},
+      </if>
+      <if test="cModify != null">
+        #{cModify,jdbcType=CHAR},
+      </if>
+      <if test="cMemo != null">
+        #{cMemo,jdbcType=VARCHAR},
+      </if>
+      <if test="cEnglish != null">
+        #{cEnglish,jdbcType=VARCHAR},
+      </if>
+      <if test="lOrder != null">
+        #{lOrder,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="TdictionaryEntity" resultType="java.lang.Long">
+    select count(*) from tdictionary
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update tdictionary
+    <set>
+      <if test="record.cSysname != null">
+        c_sysname = #{record.cSysname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.lKeyno != null">
+        l_keyno = #{record.lKeyno,jdbcType=INTEGER},
+      </if>
+      <if test="record.cKeyvalue != null">
+        c_keyvalue = #{record.cKeyvalue,jdbcType=VARCHAR},
+      </if>
+      <if test="record.cCaption != null">
+        c_caption = #{record.cCaption,jdbcType=VARCHAR},
+      </if>
+      <if test="record.cModify != null">
+        c_modify = #{record.cModify,jdbcType=CHAR},
+      </if>
+      <if test="record.cMemo != null">
+        c_memo = #{record.cMemo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.cEnglish != null">
+        c_english = #{record.cEnglish,jdbcType=VARCHAR},
+      </if>
+      <if test="record.lOrder != null">
+        l_order = #{record.lOrder,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update tdictionary
+    set c_sysname = #{record.cSysname,jdbcType=VARCHAR},
+      l_keyno = #{record.lKeyno,jdbcType=INTEGER},
+      c_keyvalue = #{record.cKeyvalue,jdbcType=VARCHAR},
+      c_caption = #{record.cCaption,jdbcType=VARCHAR},
+      c_modify = #{record.cModify,jdbcType=CHAR},
+      c_memo = #{record.cMemo,jdbcType=VARCHAR},
+      c_english = #{record.cEnglish,jdbcType=VARCHAR},
+      l_order = #{record.lOrder,jdbcType=INTEGER}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="TdictionaryEntity">
+    update tdictionary
+    <set>
+      <if test="cCaption != null">
+        c_caption = #{cCaption,jdbcType=VARCHAR},
+      </if>
+      <if test="cModify != null">
+        c_modify = #{cModify,jdbcType=CHAR},
+      </if>
+      <if test="cMemo != null">
+        c_memo = #{cMemo,jdbcType=VARCHAR},
+      </if>
+      <if test="cEnglish != null">
+        c_english = #{cEnglish,jdbcType=VARCHAR},
+      </if>
+      <if test="lOrder != null">
+        l_order = #{lOrder,jdbcType=INTEGER},
+      </if>
+    </set>
+    where c_sysname = #{cSysname,jdbcType=VARCHAR}
+      and l_keyno = #{lKeyno,jdbcType=INTEGER}
+      and c_keyvalue = #{cKeyvalue,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="TdictionaryEntity">
+    update tdictionary
+    set c_caption = #{cCaption,jdbcType=VARCHAR},
+      c_modify = #{cModify,jdbcType=CHAR},
+      c_memo = #{cMemo,jdbcType=VARCHAR},
+      c_english = #{cEnglish,jdbcType=VARCHAR},
+      l_order = #{lOrder,jdbcType=INTEGER}
+    where c_sysname = #{cSysname,jdbcType=VARCHAR}
+      and l_keyno = #{lKeyno,jdbcType=INTEGER}
+      and c_keyvalue = #{cKeyvalue,jdbcType=VARCHAR}
+  </update>
+</mapper>

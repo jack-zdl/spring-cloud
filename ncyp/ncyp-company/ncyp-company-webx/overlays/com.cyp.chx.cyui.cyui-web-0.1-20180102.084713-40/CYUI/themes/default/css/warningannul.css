@@ -1,0 +1,51 @@
+.waringcancel_wrap{
+	padding: 10px;
+}
+.waringcancel_list{
+	border: 1px solid #CADBF5;
+	margin-bottom: 20px; 
+}
+.waringcancel_list h5{
+	font-weight: 600; 
+	color: #717682;
+	background-color: #FFFFFF;
+	font-size: 15px;
+	background-color: #CADBF5;
+	padding: 5px;
+	margin: 0px;
+
+}
+.waringcancel_item li{
+	height: 35px;
+	line-height: 35px;
+	font-size: 12px;
+	color: #9B9B9B;
+	padding-left: 5px;
+}
+.waringcancel_item li:before{
+	content: "●";
+	color: #F6B55B;
+	padding-right: 10px;
+	vertical-align: 1px;
+}
+.waringcancel_item li span{
+	margin-left: 20px; 
+}
+.waringcancel_dis{
+	height: 21px;
+	line-height: 21px;
+	display: inline-block;
+	border: 2px solid #F6B55B;
+	border-radius: 5px;
+	margin-top: 7px;
+	padding: 0 5px;
+	background-color: #FBF2ED;
+}
+.triangle {
+         margin-left: -16px; 
+	     display: inline-block;
+         height:0px;
+         width:0px;
+         border:5px solid #000;
+         border-color:transparent #F6B55B transparent transparent;
+}

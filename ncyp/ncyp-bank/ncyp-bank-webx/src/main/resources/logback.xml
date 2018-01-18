@@ -1,0 +1,1013 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration>
+<configuration>
+
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder charset="UTF-8"> <!-- encoder 可以指定字符集，对于中文输出有意义 -->
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger -- %msg -- %n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="RollingFile"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>TRACE</level>
+        </filter>
+
+        <!-- 可让每天产生一个日志文件，最多 10 个，自动回滚 -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/atscloud-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>10</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger -- %msg -- %n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="QUERY"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/querydebug.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="QUERY" level="DEBUG">
+        <appender-ref ref="QUERY"/>
+    </logger>
+    
+    <appender name="SYS"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/sys.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="SYS" level="DEBUG">
+        <appender-ref ref="SYS"/>
+    </logger>
+    
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!--系统管理-业务日志设置-->
+    <appender name="systemmanage/log"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/systemmanage/log/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="systemmanage/log" level="info">
+        <appender-ref ref="systemmanage/log"/>
+    </logger>
+    <!--系统管理-系统菜单设置-->
+    <appender name="systemmanage/menu"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/systemmanage/menu/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="systemmanage/menu" level="info">
+        <appender-ref ref="systemmanage/menu"/>
+    </logger>
+    <!--用户管理-多岗设置-->
+    <appender name="usermanage/postion"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/usermanage/postion/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="usermanage/postion" level="info">
+        <appender-ref ref="usermanage/postion"/>
+    </logger>
+    <!--用户管理-角色设置-->
+    <appender name="usermanage/role"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/usermanage/role/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="usermanage/role" level="info">
+        <appender-ref ref="usermanage/role"/>
+    </logger>
+    <!--用户管理-用户设置-->
+    <appender name="usermanage/user"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/usermanage/user/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="usermanage/user" level="info">
+        <appender-ref ref="usermanage/user"/>
+    </logger> 
+    <!--用户管理-组织机构设置-->
+    <appender name="usermanage/org"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/usermanage/org/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="usermanage/org" level="info">
+        <appender-ref ref="usermanage/org"/>
+    </logger>          
+    <!--工作流管理-表单管理-表单分类-->
+    <appender name="workflow/processform/formtype"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/workflow/processform/formtype/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="workflow/processform/formtype" level="info">
+        <appender-ref ref="workflow/processform/formtype"/>
+    </logger> 
+    <!--工作流管理-表单管理-表单设置-->
+    <appender name="workflow/processform/formreg"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/workflow/processform/formreg/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="workflow/processform/formreg" level="info">
+        <appender-ref ref="workflow/processform/formreg"/>
+    </logger>          
+    <!--工作流管理-工作流设置-流程设计-->
+    <appender name="workflow/flowdesign/processdesign"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/workflow/flowdesign/processdesign/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="workflow/flowdesign/processdesign" level="info">
+        <appender-ref ref="workflow/flowdesign/processdesign"/>
+    </logger>   
+    <!--工作流管理-工作流设置-流程类型-->
+    <appender name="workflow/flowdesign/processtype"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/workflow/flowdesign/processtype/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="workflow/flowdesign/processtype" level="info">
+        <appender-ref ref="workflow/flowdesign/processtype"/>
+    </logger>    
+    <!--工作流管理-工作流监控-实例监控-->
+    <appender name="workflow/flowmonitor/instance"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/workflow/flowmonitor/instance/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="workflow/flowmonitor/instance" level="info">
+        <appender-ref ref="workflow/flowmonitor/instance"/>
+    </logger>  
+    <!--工作流管理-工作流监控-委托监控-->
+    <appender name="workflow/flowmonitor/delegate"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/workflow/flowmonitor/delegate/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="workflow/flowmonitor/delegate" level="info">
+        <appender-ref ref="workflow/flowmonitor/delegate"/>
+    </logger>            
+    <!--租户管理-租户信息-->
+    <appender name="tenantmanage/tenant"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/tenantmanage/tenant/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="tenantmanage/tenant" level="info">
+        <appender-ref ref="tenantmanage/tenant"/>
+    </logger>          
+    <!--租户管理-协议设置-->
+    <appender name="tenantmanage/contract"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/tenantmanage/contract/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="tenantmanage/contract" level="info">
+        <appender-ref ref="tenantmanage/contract"/>
+    </logger>          
+    <!--租户管理-套餐设置-->
+    <appender name="tenantmanage/pacgage"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/tenantmanage/pacgage/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="tenantmanage/pacgage" level="info">
+        <appender-ref ref="tenantmanage/pacgage"/>
+    </logger>          
+    <!--辅助开发管理-功能表定义维护-->
+    <appender name="tsvcmanage/thsiright"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/tsvcmanage/thsiright/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="tsvcmanage/thsiright" level="info">
+        <appender-ref ref="tsvcmanage/thsiright"/>
+    </logger>     
+    <!--辅助开发管理-数据源SQL维护-->
+    <appender name="tsvcmanage/tsvcsql"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/tsvcmanage/tsvcsql/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="tsvcmanage/tsvcsql" level="info">
+        <appender-ref ref="tsvcmanage/tsvcsql"/>
+    </logger>     
+    <!--辅助开发管理-功能输入输出定义-->
+    <appender name="tsvcmanage/tsvcinterface"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/tsvcmanage/tsvcinterface/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="tsvcmanage/tsvcinterface" level="info">
+        <appender-ref ref="tsvcmanage/tsvcinterface"/>
+    </logger>     
+    <!--辅助开发管理-查询显示配置-->
+    <appender name="tsvcmanage/tsvcviewconfig"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/tsvcmanage/tsvcviewconfig/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="tsvcmanage/tsvcviewconfig" level="info">
+        <appender-ref ref="tsvcmanage/tsvcviewconfig"/>
+    </logger>     
+    <!--辅助开发管理-生成配置SQL-->
+    <appender name="tsvcmanage/tsvcsetsql"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/tsvcmanage/tsvcsetsql/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="tsvcmanage/tsvcsetsql" level="info">
+        <appender-ref ref="tsvcmanage/tsvcsetsql"/>
+    </logger>     
+    <!--辅助开发管理-数据权限表定义-->
+    <appender name="tsvcmanage/tdrctablelist"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/tsvcmanage/tdrctablelist/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="tsvcmanage/tdrctablelist" level="info">
+        <appender-ref ref="tsvcmanage/tdrctablelist"/>
+    </logger>     
+    <!--辅助开发管理-数据权限配置-->
+    <appender name="tsvcmanage/tdrcownerconfig"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/tsvcmanage/tdrcownerconfig/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="tsvcmanage/tdrcownerconfig" level="info">
+        <appender-ref ref="tsvcmanage/tdrcownerconfig"/>
+    </logger>  
+    <!--系统银行-代收付用途-->
+    <appender name="sysbank/purpose"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/sysbank/purpose/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="sysbank/purpose" level="info">
+        <appender-ref ref="sysbank/purpose"/>
+    </logger>  
+    <!--系统银行-银行-->
+    <appender name="sysbank/bank"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/sysbank/bank/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="sysbank/bank" level="info">
+        <appender-ref ref="sysbank/bank"/>
+    </logger> 
+    <!--系统银行-直联渠道-->
+    <appender name="sysbank/directchannel"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/sysbank/directchannel/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="sysbank/directchannel" level="info">
+        <appender-ref ref="sysbank/directchannel"/>
+    </logger> 
+    <!--系统银行-直联渠道代收付用途映射-->
+    <appender name="sysbank/directchannelpurposesmap"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/sysbank/directchannelpurposesmap/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="sysbank/directchannelpurposesmap" level="info">
+        <appender-ref ref="sysbank/directchannelpurposesmap"/>
+    </logger> 
+    <!--系统银行-直联指令查询配置-->
+    <appender name="sysbank/directquerycmdconfig"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/sysbank/directquerycmdconfig/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="sysbank/directquerycmdconfig" level="info">
+        <appender-ref ref="sysbank/directquerycmdconfig"/>
+    </logger>  
+    <!--一般设置-日历-->
+    <appender name="generalset/calendar"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/generalset/calendar/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="generalset/calendar" level="info">
+        <appender-ref ref="generalset/calendar"/>
+    </logger>  
+    <!--一般设置-特殊节假日-->
+    <appender name="generalset/calendarspecial"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/generalset/calendarspecial/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="generalset/calendarspecial" level="info">
+        <appender-ref ref="generalset/calendarspecial"/>
+    </logger> 
+    <!--一般设置-币种-->
+    <appender name="generalset/currency"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/generalset/currency/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="generalset/currency" level="info">
+        <appender-ref ref="generalset/currency"/>
+    </logger> 
+    <!--一般设置-公告管理-->
+    <appender name="generalset/notice"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/generalset/notice/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="generalset/notice" level="info">
+        <appender-ref ref="generalset/notice"/>
+    </logger> 
+    <!--系统参数-系统参数管理-->
+    <appender name="sysparam/parammanage"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/sysparam/parammanage/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="sysparam/parammanage" level="info">
+        <appender-ref ref="sysparam/parammanage"/>
+    </logger>  
+    <!--主动服务-模版管理-->
+    <appender name="activeservice/templatemanage"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/activeservice/templatemanage/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="activeservice/templatemanage" level="info">
+        <appender-ref ref="activeservice/templatemanage"/>
+    </logger>  
+    <!--主动服务-规则管理-->
+    <appender name="activeservice/rulemanage"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/activeservice/rulemanage/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="activeservice/rulemanage" level="info">
+        <appender-ref ref="activeservice/rulemanage"/>
+    </logger>  
+    <!--主动服务-群组管理-->
+    <appender name="activeservice/groupmanage"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/activeservice/groupmanage/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="activeservice/groupmanage" level="info">
+        <appender-ref ref="activeservice/groupmanage"/>
+    </logger>  
+    <!--计划任务-->
+    <appender name="schedule"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/schedule/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="schedule" level="info">
+        <appender-ref ref="schedule"/>
+    </logger>  
+    <!--预警-预警对象-->
+    <appender name="warning/warningobject"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/warning/warningobject/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="warning/warningobject" level="info">
+        <appender-ref ref="warning/warningobject"/>
+    </logger>  
+    <!--预警-预警规则-->
+    <appender name="warning/warningrule"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/warning/warningrule/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="warning/warningrule" level="info">
+        <appender-ref ref="warning/warningrule"/>
+    </logger>  
+    <!--预警-预警信息-->
+    <appender name="warning/warningmessage"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/warning/warningmessage/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="warning/warningmessage" level="info">
+        <appender-ref ref="warning/warningmessage"/>
+    </logger>  
+    <!--系统规则-规则-->
+    <appender name="rule/dtsrulemanage"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/rule/dtsrulemanage/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="rule/dtsrulemanage" level="info">
+        <appender-ref ref="rule/dtsrulemanage"/>
+    </logger>  
+     <!--系统规则-规则明细-->
+    <appender name="rule/dtsruledetailmanage"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/rule/dtsruledetailmanage/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="rule/dtsruledetailmanage" level="info">
+        <appender-ref ref="rule/dtsruledetailmanage"/>
+    </logger>  
+     <!--系统规则-内外值转化定义-->
+    <appender name="rule/extobjects"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/rule/extobjects/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="rule/extobjects" level="info">
+        <appender-ref ref="rule/extobjects"/>
+    </logger>  
+     <!--系统规则-内外值转化明细-->
+    <appender name="rule/extdatalookup"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/rule/extdatalookup/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="rule/extdatalookup" level="info">
+        <appender-ref ref="rule/extdatalookup"/>
+    </logger>  
+    <!--渠道路由-渠道条件-->
+    <appender name="channel/channelcondition"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/channel/channelcondition/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="channel/channelcondition" level="info">
+        <appender-ref ref="channel/channelcondition"/>
+    </logger>  
+      <!--渠道路由-渠道定义-->
+    <appender name="channel/channeldefinition"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/channel/channeldefinition/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="channel/channeldefinition" level="info">
+        <appender-ref ref="channel/channeldefinition"/>
+    </logger>  
+      <!--渠道路由-渠道切换-->
+    <appender name="channel/channelmap"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/channel/channelmap/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="channel/channelmap" level="info">
+        <appender-ref ref="channel/channelmap"/>
+    </logger>  
+    <!--智能中心-银行名称智能匹配-->
+    <appender name="smartcenter/banksmartmatch"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/smartcenter/banksmartmatch/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="smartcenter/banksmartmatch" level="info">
+        <appender-ref ref="smartcenter/banksmartmatch"/>
+    </logger>
+     <!--智能中心-联行号智能匹配-->
+    <appender name="smartcenter/cnapssmartmatch"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/smartcenter/cnapssmartmatch/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="smartcenter/cnapssmartmatch" level="info">
+        <appender-ref ref="smartcenter/cnapssmartmatch"/>
+    </logger>    
+    <!--银行账户管理-供应方管理-银行账户-->
+    <appender name="supplybkaccountmanage/bankaccount"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/supplybkaccountmanage/bankaccount/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="supplybkaccountmanage/bankaccount" level="info">
+        <appender-ref ref="supplybkaccountmanage/bankaccount"/>
+    </logger>
+    <!--银行账户管理-供应方管理-银行账户明细-->
+    <appender name="supplybkaccountmanage/bankaccountdetail"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/supplybkaccountmanage/bankaccountdetail/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="supplybkaccountmanage/bankaccountdetail" level="info">
+        <appender-ref ref="supplybkaccountmanage/bankaccountdetail"/>
+    </logger>  
+    <!--银行账户管理-供应方管理-银行账户余额-->
+    <appender name="supplybkaccountmanage/bankaccountbalance"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/supplybkaccountmanage/bankaccountbalance/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="supplybkaccountmanage/bankaccountbalance" level="info">
+        <appender-ref ref="supplybkaccountmanage/bankaccountbalance"/>
+    </logger>  
+    <!--银行账户管理-采购方管理-银行账户-->
+    <appender name="purchasebkaccountmanage/bankaccount"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/purchasebkaccountmanage/bankaccount/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="purchasebkaccountmanage/bankaccount" level="info">
+        <appender-ref ref="purchasebkaccountmanage/bankaccount"/>
+    </logger>
+    <!--银行账户管理-银行账户性质-->
+    <appender name="bankaccountmanage/bacategories"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/bankaccountmanage/bacategories/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="bankaccountmanage/bacategories" level="info">
+        <appender-ref ref="bankaccountmanage/bacategories"/>
+    </logger>
+    <!--资金结算管理-交易对手-->
+    <appender name="settlementsetting/counterparty"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/settlementsetting/counterparty/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="settlementsetting/counterparty" level="info">
+        <appender-ref ref="settlementsetting/counterparty"/>
+    </logger>
+    <!--资金结算管理-结算方式-->
+    <appender name="settlementsetting/settlementmode"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/settlementsetting/settlementmode/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="settlementsetting/settlementmode" level="info">
+        <appender-ref ref="settlementsetting/settlementmode"/>
+    </logger>
+    <!--资金结算管理-交易类型-->
+    <appender name="settlementsetting/paytype"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/settlementsetting/paytype/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="settlementsetting/paytype" level="info">
+        <appender-ref ref="settlementsetting/paytype"/>
+    </logger>
+    <!--资金结算管理-智能付款-->
+    <appender name="smartpayment/paymenttrade"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/smartpayment/paymenttrade/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="smartpayment/paymenttrade" level="info">
+        <appender-ref ref="smartpayment/paymenttrade"/>
+    </logger>    
+    <!--报销管理-报销配置-->
+    <appender name="reimburse/reimburseconfig"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/reimburse/reimburseconfig/%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="reimburse/reimburseconfig" addtivity="false">
+        <appender-ref ref="reimburse/reimburseconfig"/>
+    </logger> 
+    <!--报销管理-报销项目-->
+    <appender name="reimburse/reimburseitem"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/reimburse/reimburseitem/%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="reimburse/reimburseitem" addtivity="false">
+        <appender-ref ref="reimburse/reimburseitem"/>
+    </logger>
+    <!--报销管理-报销单-->
+    <appender name="reimburse/reimbursement"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/reimburse/reimbursement/%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="reimburse/reimbursement" addtivity="false">
+        <appender-ref ref="reimburse/reimbursement"/>
+    </logger>    
+    <!--报销管理-接口-->
+    <appender name="reimburse"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/reimburse/service.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="reimburse" level="info">
+        <appender-ref ref="reimburse"/>
+    </logger>                                                          
+    <!--系统默认-->
+    <appender name="system"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>../log/默认/%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="system" addtivity="false">
+        <appender-ref ref="system"/>
+    </logger>
+
+    <root level="ERROR">
+        <appender-ref ref="stdout"/>
+        <appender-ref ref="RollingFile"/>
+    </root>
+    
+    <!-- 下面配置一些第三方包的日志过滤级别，用于避免刷屏 -->
+    <logger name="org.hibernate" level="WARN"/>
+    <logger name="org.springframework" level="WARN"/>
+    <logger name="com.opensymphony" level="WARN"/>
+    <logger name="org.apache" level="WARN"/>
+
+    <!-- show parameters for hibernate sql 专为 Hibernate 定制 -->
+    <logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="TRACE"/>
+    <logger name="org.hibernate.type.descriptor.sql.BasicExtractor" level="DEBUG"/>
+    <logger name="org.hibernate.SQL" level="DEBUG"/>
+    <logger name="org.hibernate.engine.QueryParameters" level="DEBUG"/>
+    <logger name="org.hibernate.engine.query.HQLQueryPlan" level="DEBUG"/>
+</configuration> 
