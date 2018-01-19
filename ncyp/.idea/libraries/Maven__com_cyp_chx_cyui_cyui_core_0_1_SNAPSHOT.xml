@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.cyp.chx.cyui:cyui-core:0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/cyp/chx/cyui/cyui-core/0.1-SNAPSHOT/cyui-core-0.1-20180116.093043-42.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/cyp/chx/cyui/cyui-core/0.1-SNAPSHOT/cyui-core-0.1-20180116.093043-42-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/cyp/chx/cyui/cyui-core/0.1-SNAPSHOT/cyui-core-0.1-20180116.093043-42-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

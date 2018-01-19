@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.cyp.chx.impl:com.cyp.chx.impl.db:3.0.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/cyp/chx/impl/com.cyp.chx.impl.db/3.0.0-SNAPSHOT/com.cyp.chx.impl.db-3.0.0-20171130.132907-14.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/cyp/chx/impl/com.cyp.chx.impl.db/3.0.0-SNAPSHOT/com.cyp.chx.impl.db-3.0.0-20171130.132907-14-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/cyp/chx/impl/com.cyp.chx.impl.db/3.0.0-SNAPSHOT/com.cyp.chx.impl.db-3.0.0-20171130.132907-14-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

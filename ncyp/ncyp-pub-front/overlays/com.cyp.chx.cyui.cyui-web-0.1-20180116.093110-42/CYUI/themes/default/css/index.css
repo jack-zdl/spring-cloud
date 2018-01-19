@@ -1,0 +1,234 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #EEEEEE;
+    /*padding: 5px 10px 0 10px;*/
+}
+.task_wrap{
+    position: relative;
+}
+/*广告区域*/
+.ad_block{
+    height: 160px;
+    /*width: 950px;*/
+    margin-left: 268px;
+    text-align: right;
+    background: url("../../../../bizframe/image/img/banner.png") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+@media (min-width: 1600px) {
+    .ad_block {
+        height: 260px;
+    }
+}
+.ad_block_text{
+    /*padding-top: 40px;*/
+    margin: 0 auto;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+}
+/*.ad_block img{*/
+    /*margin-top: 5px;*/
+/*}*/
+.ad_block .close_ad{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url('../../../bootstrap/assets/css/img/close.png');
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 50%;
+  background-position: center; 
+}
+.ad_block .close_ad:hover{
+    background-color: #5F5F5F;
+    opacity: 0.3;
+}
+/*模块样式*/
+.task_list{
+    width: 260px;
+    height: 100%;
+    background-color: white;
+    display: inline-block;
+    float: left;
+    position: relative;
+    overflow: auto;
+}
+.work_block{
+    background-color: white;
+    display: inline-block;
+    float: left;
+    margin: 10px 10px 0;
+}
+.module{
+    width:300px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #9B9B9B;
+}
+.module>div{
+    background-color: #F8F8F9;
+    height: 44px;
+    margin-bottom: 10px;
+    padding: 12px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+.region{
+    position: absolute;
+    top: 12px;
+    left: 0px;
+}
+.each_module_icon{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+.each_module_text{
+    position: absolute;
+    top: 5px;
+    left: 46px;
+    font-size: 14px;
+}
+.right{
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+/*task_list*/
+.user_info{
+    margin: 50px auto;
+    height: 100px;
+    text-align: center;
+    /*position: relative;*/
+}
+.user_img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #E58417;
+    line-height: 75px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin: 0 auto;
+    /*display: inline-block;*/
+    /*position: absolute;*/
+    /*top: 0px;*/
+    /*left: 40px;*/
+}
+.user_des{
+    font-size: 18px;
+    font-weight: 100;
+    color: #929292;
+    text-align: center;
+    margin-top: 10px;
+    /*display: inline-block;*/
+    /*position: absolute;*/
+    /*top: 0px;*/
+    /*left: 120px;*/
+}
+.user_des ul li{
+    font-size: 13px;
+    text-align: left;
+    margin: 3px 0;
+}
+.user_des ul li.name{
+    font-size: 17px;
+    color: #333333;
+    text-align: center;
+}
+
+.task_nav{
+    width: 100%;
+}
+.task_nav ul{
+    width: 100%;
+    font-size: 13px;
+    padding: 0 16px;
+}
+.task_nav ul li{
+    line-height: 30px;
+    color: #7C7C7C;
+    cursor: pointer;
+    border-left: 4px solid white;
+    margin: 2px 0;
+    padding: 12px 25px;
+}
+.task_nav ul li i{
+    margin-right: 20px;
+    margin-left: 60px;
+}
+.task_nav ul .active{
+    /*background-color: #EEF3F7;*/
+    color: red;
+    -webkit-box-shadow: 0 3px 5px #EAECEF;
+    box-shadow: 0 3px 5px #EAECEF;
+    border: 1px solid #D9DBDE;
+    border-radius: 2px;
+    /*border-left: 4px solid #269abc;*/
+}
+.task_nav ul li:hover{
+    /*background-color: #EEF3F7;*/
+    color: red;
+    -webkit-box-shadow: 0 3px 5px #EAECEF;
+    box-shadow: 0 3px 5px #EAECEF;
+    border: 1px solid #D9DBDE;
+    border-radius: 2px;
+    /*border-left: 4px solid #269abc;*/
+}
+.task_nav ul li span{
+    font-size: 12px;
+    font-weight: bolder;
+    margin-right: 10px;
+}
+.exit{
+  margin: 20px 30px;
+}
+/*work_block*/
+.work_block{
+    color: #9B9B9B;
+    font-size: 13px;
+}
+.work_block iframe{
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+/*module*/
+.handbook{
+    background-color: white;
+    font-size: 13px;
+    padding: 15px;
+    text-align: center;
+}
+.handbook i{
+    font-size: 19px !important;
+    vertical-align: middle;
+}
+.each_module{
+    font-size: 13px;
+    margin-top: 10px;
+    /*text-align: center;*/
+    background-color: white;
+}
+.each_module div{
+    padding: 7px;
+    /*border-bottom: 1px solid #E3E3E3;*/
+}
+.each_module div i{
+    margin-right: 10px;
+    font-size: 17px !important;
+    vertical-align: middle;
+}
+.each_module ul{
+    margin-bottom: 10px;
+}
+.each_module ul li{
+    line-height: 30px;
+}

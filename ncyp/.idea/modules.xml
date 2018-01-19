@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ncyp.iml" filepath="$PROJECT_DIR$/ncyp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-bank/ncyp-bank.iml" filepath="$PROJECT_DIR$/ncyp-bank/ncyp-bank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-bank/ncyp-bank-biz/ncyp-bank-biz.iml" filepath="$PROJECT_DIR$/ncyp-bank/ncyp-bank-biz/ncyp-bank-biz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-bank/ncyp-bank-common/ncyp-bank-common.iml" filepath="$PROJECT_DIR$/ncyp-bank/ncyp-bank-common/ncyp-bank-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-bank/ncyp-bank-eureka/ncyp-bank-eureka.iml" filepath="$PROJECT_DIR$/ncyp-bank/ncyp-bank-eureka/ncyp-bank-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-bank/ncyp-bank-front/ncyp-bank-front.iml" filepath="$PROJECT_DIR$/ncyp-bank/ncyp-bank-front/ncyp-bank-front.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-bank/ncyp-bank-webx/ncyp-bank-webx.iml" filepath="$PROJECT_DIR$/ncyp-bank/ncyp-bank-webx/ncyp-bank-webx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-company/ncyp-company.iml" filepath="$PROJECT_DIR$/ncyp-company/ncyp-company.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-company/ncyp-company-biz/ncyp-company-biz.iml" filepath="$PROJECT_DIR$/ncyp-company/ncyp-company-biz/ncyp-company-biz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-company/ncyp-company-eureka/ncyp-company-eureka.iml" filepath="$PROJECT_DIR$/ncyp-company/ncyp-company-eureka/ncyp-company-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-company/ncyp-company-front/ncyp-company-front.iml" filepath="$PROJECT_DIR$/ncyp-company/ncyp-company-front/ncyp-company-front.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-company/ncyp-company-webx/ncyp-company-webx.iml" filepath="$PROJECT_DIR$/ncyp-company/ncyp-company-webx/ncyp-company-webx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-platform/ncyp-platform.iml" filepath="$PROJECT_DIR$/ncyp-platform/ncyp-platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-pub-common/ncyp-pub-common.iml" filepath="$PROJECT_DIR$/ncyp-pub-common/ncyp-pub-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-pub-front/ncyp-pub-front.iml" filepath="$PROJECT_DIR$/ncyp-pub-front/ncyp-pub-front.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-supplier/ncyp-supplier.iml" filepath="$PROJECT_DIR$/ncyp-supplier/ncyp-supplier.iml" />
+    </modules>
+  </component>
+</project>

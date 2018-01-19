@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ncyp-bank-biz" />
+        <module name="ncyp-bank-common" />
+        <module name="ncyp-bank-eureka" />
+        <module name="ncyp-bank-front" />
+        <module name="ncyp-bank-webx" />
+        <module name="ncyp-company-biz" />
+        <module name="ncyp-company-eureka" />
+        <module name="ncyp-company-front" />
+        <module name="ncyp-company-webx" />
+        <module name="ncyp-platform" />
+        <module name="ncyp-pub-common" />
+        <module name="ncyp-pub-front" />
+        <module name="ncyp-supplier" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ncyp" target="1.8" />
+      <module name="ncyp-bank" target="1.6" />
+      <module name="ncyp-bank-biz" target="1.8" />
+      <module name="ncyp-bank-common" target="1.8" />
+      <module name="ncyp-bank-eureka" target="1.8" />
+      <module name="ncyp-bank-front" target="1.8" />
+      <module name="ncyp-bank-webx" target="1.5" />
+      <module name="ncyp-company" target="1.6" />
+      <module name="ncyp-company-biz" target="1.8" />
+      <module name="ncyp-company-eureka" target="1.8" />
+      <module name="ncyp-company-front" target="1.8" />
+      <module name="ncyp-company-webx" target="1.5" />
+      <module name="ncyp-platform" target="1.8" />
+      <module name="ncyp-pub-common" target="1.8" />
+      <module name="ncyp-pub-front" target="1.8" />
+      <module name="ncyp-supplier" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

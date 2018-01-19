@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.cyp.chx.cyui:cyui-web:war:nolib:0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/cyp/chx/cyui/cyui-web/0.1-SNAPSHOT/cyui-web-0.1-20180116.093110-42-nolib.war!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/cyp/chx/cyui/cyui-web/0.1-SNAPSHOT/cyui-web-0.1-20180116.093110-42-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/cyp/chx/cyui/cyui-web/0.1-SNAPSHOT/cyui-web-0.1-20180116.093110-42-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

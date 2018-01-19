@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ncyp-company-front:war">
+    <output-path>$PROJECT_DIR$/ncyp-company/ncyp-company-front/target</output-path>
+    <root id="archive" name="ncyp-company-front-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ncyp-company-front:war exploded" />
+    </root>
+  </artifact>
+</component>
