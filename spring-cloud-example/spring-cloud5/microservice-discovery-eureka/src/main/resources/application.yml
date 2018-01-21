@@ -1,0 +1,18 @@
+security:
+  basic:
+    enabled: true
+  user:
+    name: user
+    password: password123
+server:
+  port: 8761
+
+eureka:
+  client:
+#    healthcheck:    # eureka添加健康检查
+#      enabled: true
+    service-url:
+      default-zone: http://user:password123@localhost:8761/eureka  # http://user:password123@localhost:8761/eureka  # http://localhost:8761/eureka
+    register-with-eureka: false    # registerWithEureka表示是否注册自身到eureka服务器，但是目前是单点模式，不能允许这个动作，所以设置为false，在集群模式时就可以放开了，为了便于访问
+    fetch-registry: false    #表示禁止注册中心注册“注册中心项目（cf-eureka）”本身
+

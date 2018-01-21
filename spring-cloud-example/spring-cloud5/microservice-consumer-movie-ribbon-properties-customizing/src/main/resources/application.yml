@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: microservice-consumer-movie-ribbon
+server:
+  port: 8010
+#user:
+#  userServicePath: http://localhost:7900/simple/   #不适用硬编码
+
+eureka:
+  client:
+    healthcheck:    # eureka添加健康检查
+      enabled: true
+    service-url:
+      defaultZone: http://user:password123@localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+#    instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+
+# 就可以使用负载均衡
+microservice-provider-user:   # 填写注册到Eureka服务名称
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule  # 根据响应式加权来访问  使用某个实现类
