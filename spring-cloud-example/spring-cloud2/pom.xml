@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.zhang.cloud</groupId>
-	<artifactId>microservice-simple-consumer-movie</artifactId>
+	<artifactId>spring-cloud2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -17,6 +17,11 @@
 		<version>1.5.7.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
+	<modules>
+		<module>microservice-simple-consumer-movie</module>
+		<module>microservice-simple-provider-user</module>
+	</modules>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
