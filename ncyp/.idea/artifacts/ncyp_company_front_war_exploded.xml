@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="ncyp-company-front:war exploded">
-    <output-path>$PROJECT_DIR$/ncyp-company/ncyp-company-front/target/ncyp-company-front-1.0-SNAPSHOT</output-path>
+    <output-path>$PROJECT_DIR$/ncyp-company/ncyp-company-front/target/spring-boot-starter-parent-1.5.9.RELEASE</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -142,7 +142,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/ncyp-company/ncyp-company-front/target/ncyp-company-front-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/ncyp-company/ncyp-company-front/target/spring-boot-starter-parent-1.5.9.RELEASE/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="ncyp-company-front/web/Web" />
     </root>

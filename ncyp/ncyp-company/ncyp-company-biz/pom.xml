@@ -47,17 +47,17 @@
 			<version>5.1.44</version>
 		</dependency>
 		<!--CfcaUtils 勿删-->
-		<dependency>
-			<groupId>com.cyp.chx</groupId>
-			<artifactId>cyp-common</artifactId>
-			<version>0.1-SNAPSHOT</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.slf4j</groupId>
-					<artifactId>slf4j-log4j12</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>com.cyp.chx</groupId>-->
+			<!--<artifactId>cyp-common</artifactId>-->
+			<!--<version>0.1-SNAPSHOT</version>-->
+			<!--<exclusions>-->
+				<!--<exclusion>-->
+					<!--<groupId>org.slf4j</groupId>-->
+					<!--<artifactId>slf4j-log4j12</artifactId>-->
+				<!--</exclusion>-->
+			<!--</exclusions>-->
+		<!--</dependency>-->
 		<!--spring session 勿删-->
         <dependency>
             <groupId>org.springframework.session</groupId>

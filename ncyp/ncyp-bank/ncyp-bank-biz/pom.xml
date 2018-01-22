@@ -34,6 +34,13 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
+		<!-- 监控管理模块的东西
+		 	检测心跳的jar
+		 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
 		<!--勿删-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -53,17 +60,17 @@
 			<version>5.1.44</version>
 		</dependency>
 		<!--CfcaUtils 勿删-->
-		<dependency>
-			<groupId>com.cyp.chx</groupId>
-			<artifactId>cyp-common</artifactId>
-			<version>0.1-SNAPSHOT</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.slf4j</groupId>
-					<artifactId>slf4j-log4j12</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>com.cyp.chx</groupId>-->
+			<!--<artifactId>cyp-common</artifactId>-->
+			<!--<version>0.1-SNAPSHOT</version>-->
+			<!--<exclusions>-->
+				<!--<exclusion>-->
+					<!--<groupId>org.slf4j</groupId>-->
+					<!--<artifactId>slf4j-log4j12</artifactId>-->
+				<!--</exclusion>-->
+			<!--</exclusions>-->
+		<!--</dependency>-->
         <!--spring session 勿删-->
         <dependency>
             <groupId>org.springframework.session</groupId>
@@ -98,17 +105,17 @@
 			<version>2.6.1</version>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-context-support</artifactId>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-cache</artifactId>
 		</dependency>
-
 		<dependency>
-			<groupId>net.sf.ehcache</groupId>
-			<artifactId>ehcache</artifactId>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>RELEASE</version>
 		</dependency>
     </dependencies>
 

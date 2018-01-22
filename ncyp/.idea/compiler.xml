@@ -22,22 +22,22 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ncyp" target="1.8" />
+      <module name="ncyp" target="1.6" />
       <module name="ncyp-bank" target="1.6" />
       <module name="ncyp-bank-biz" target="1.8" />
-      <module name="ncyp-bank-common" target="1.8" />
+      <module name="ncyp-bank-common" target="1.6" />
       <module name="ncyp-bank-eureka" target="1.8" />
       <module name="ncyp-bank-front" target="1.8" />
       <module name="ncyp-bank-webx" target="1.5" />
       <module name="ncyp-company" target="1.6" />
       <module name="ncyp-company-biz" target="1.8" />
-      <module name="ncyp-company-eureka" target="1.8" />
-      <module name="ncyp-company-front" target="1.8" />
+      <module name="ncyp-company-eureka" target="1.6" />
+      <module name="ncyp-company-front" target="1.6" />
       <module name="ncyp-company-webx" target="1.5" />
-      <module name="ncyp-platform" target="1.8" />
-      <module name="ncyp-pub-common" target="1.8" />
+      <module name="ncyp-platform" target="1.6" />
+      <module name="ncyp-pub-common" target="1.6" />
       <module name="ncyp-pub-front" target="1.8" />
-      <module name="ncyp-supplier" target="1.8" />
+      <module name="ncyp-supplier" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -32,26 +32,11 @@ import org.springframework.web.client.RestTemplate;
  * 开发时间: 2017/11/9 11:13<br>
  */
 @SpringBootApplication
-//@RestController
 @EnableTransactionManagement
-@Configuration
 @EnableConfigurationProperties({IPBlack.class})
 @EnableCaching  // 开启缓存，需要显示的指定
 public class NcypBankBizApplication {
 
-    @Bean
-    public
-    CacheManager cacheManager(){
-        return new ConcurrentMapCacheManager();
-    }
-
-    @Bean
-    public
-    EhCacheManagerFactoryBean ehCache(){
-        EhCacheManagerFactoryBean ehCacheManagerFactoryBean = new EhCacheManagerFactoryBean();
-        ehCacheManagerFactoryBean.setConfigLocation(new ClassPathResource("ehcache.xml"));
-        return ehCacheManagerFactoryBean;
-    }
     /**
      * 开启方法级别的参数校验
      * @return MethodValidationPostProcessor spring做方法级校验的类
@@ -62,15 +47,8 @@ public class NcypBankBizApplication {
         return new MethodValidationPostProcessor();
     }
 
-
-
 	public static void main(String[] args) {
 		SpringApplication.run(NcypBankBizApplication.class, args);
 	}
-//    @Value("${server.port}")
-//    String port ;
-//    @RequestMapping("/hi")
-//    public String home(@RequestParam String name) {
-//        return "hi "+name+",i am from port:" +port;
-//    }
+
 }

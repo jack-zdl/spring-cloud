@@ -23,8 +23,8 @@ import com.ceying.chx.common.util.SequenceUtil;
 import com.ceying.chx.common.util.log.LogContext;
 import com.ceying.chx.common.util.response.RespJson;
 import com.ceying.chx.common.util.response.RespJsonFactory;
-import com.ceying.chx.common.utils.cfca.CfcaUtils;
-import com.ceying.chx.common.utils.stringtools.FString;
+//import com.ceying.chx.common.utils.cfca.CfcaUtils;
+//import com.ceying.chx.common.utils.stringtools.FString;
 import com.ceying.chx.common.vo.TripartiteagreementTemplateVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheConfig;
@@ -388,13 +388,13 @@ public class AgreementTemplateServiceImpl extends BaseService implements Agreeme
                 String signContext = Base64.getEncoder().encodeToString(tripartiteagreementTemplate.getTemplateContent());
 
                 //待完成功能
-                if (!CfcaUtils.getInstance().verifySM2P7DetachMsg(signContext.getBytes(), sign.getBytes())) {
-                    throw new Exception("三方协议模板签名验签失败，送审无效！urid = " + urid);
-                }
-
-                if (FString.isNullOrEmpty(urid)) {
-                    throw new Exception("数据异常，urid字段值非法（为空）！");
-                }
+//                if (!CfcaUtils.getInstance().verifySM2P7DetachMsg(signContext.getBytes(), sign.getBytes())) {
+//                    throw new Exception("三方协议模板签名验签失败，送审无效！urid = " + urid);
+//                }
+//
+//                if (FString.isNullOrEmpty(urid)) {
+//                    throw new Exception("数据异常，urid字段值非法（为空）！");
+//                }
                 if (!(TaTemplateEnum.BEFORESEND.getName()).equals(tripartiteagreementTemplate.getLastOperateflag())){
                     throw new Exception("该三方协议模板已发布");
                 }
