@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.cyp.chx</groupId>
+	<artifactId>ncyp</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>ncyp-customer-rcentor</module>
+		<module>ncyp-provice-rcentor</module>
+        <module>ncyp-pub-common</module>
+		<module>ncyp-rcenter</module>
+    </modules>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.7.RELEASE</version>
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+        <!-- 前端平台cyui版本 -->
+        <cyui.version>0.1-SNAPSHOT</cyui.version>
+        <!--json版本-->
+        <fastjson_version>1.1.39</fastjson_version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- 自动去管理jar的版本，相互之间兼容 -->
+			<dependency>
+				<groupId>io.spring.platform</groupId>
+				<artifactId>platform-bom</artifactId>
+				<version>Brussels-SR6</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Dalston.SR4</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<!-- 编译的插件 -->
+	<build>
+		<plugins>
+			<plugin>
+				<!--<groupId>org.apache.maven.plugins</groupId>-->
+				<!--<artifactId>maven-compiler-plugin</artifactId>-->
+				<!--<version>3.6.1</version>-->
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

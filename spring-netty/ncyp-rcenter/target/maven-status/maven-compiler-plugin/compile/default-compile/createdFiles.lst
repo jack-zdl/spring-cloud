@@ -1,0 +1,8 @@
+com\cyp\chx\rcenter\RcenterApplication.class
+com\cyp\chx\rcenter\Task\NettyTask.class
+com\cyp\chx\rcenter\bean\NotifyTaskBean.class
+com\cyp\chx\rcenter\config\JedisConfig.class
+com\cyp\chx\rcenter\redis\JedisConfiguration.class
+com\cyp\chx\rcenter\service\RegistServiceImpl.class
+com\cyp\chx\rcenter\bean\ReNotifyTaskList.class
+com\cyp\chx\rcenter\service\RegistServiceImpl$RegistNotifyTask.class

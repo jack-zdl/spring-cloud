@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ncyp-customer-rcenter" />
+        <module name="ncyp-provice-rcenter" />
+        <module name="ncyp-pub-common" />
+        <module name="ncyp-rcenter" />
+        <module name="ncyp-rcenter (1)" />
+        <module name="ncyp-rcenter (2)" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ncyp" target="1.8" />
+      <module name="ncyp-customer-rcenter" target="1.8" />
+      <module name="ncyp-provice-rcenter" target="1.8" />
+      <module name="ncyp-pub-common" target="1.8" />
+      <module name="ncyp-rcenter" target="1.8" />
+      <module name="ncyp-rcenter (1)" target="1.8" />
+      <module name="ncyp-rcenter (2)" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
