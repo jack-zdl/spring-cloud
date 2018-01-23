@@ -17,7 +17,7 @@
     <packaging>pom</packaging>
 
     <modules>
-    	  <module>ncyp-bank-common</module>
+        <module>ncyp-bank-common</module>
         <module>ncyp-bank-eureka</module>
         <module>ncyp-bank-front</module>
         <module>ncyp-bank-biz</module>

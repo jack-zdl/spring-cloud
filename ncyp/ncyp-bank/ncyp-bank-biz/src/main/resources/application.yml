@@ -18,12 +18,9 @@ spring:
   aop:
     auto: true
     proxy-target-class: true
-#  cache:
-#    ehcache:
-#      config: ehcache.xml
-#      provider: net.sf.ehcache.CacheManager
-#    type: ehcache
-
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
 
 eureka:
   client:

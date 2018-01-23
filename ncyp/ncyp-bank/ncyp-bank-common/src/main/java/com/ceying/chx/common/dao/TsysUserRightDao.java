@@ -11,4 +11,5 @@ import com.ceying.chx.common.util.MyMapper;
  * <br>
  */
 public interface TsysUserRightDao extends MyMapper<TsysUserRightEntity>{
+
 }
