@@ -30,4 +30,9 @@ eureka:
   instance:
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+    ## 自定义的元数据
+    metadata-map:
+      zone: AA
+      lilizhou: zhangdelei
+
 

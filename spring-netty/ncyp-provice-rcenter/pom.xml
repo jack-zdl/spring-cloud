@@ -13,7 +13,7 @@
 
 	<parent>
 		<groupId>com.cyp.chx</groupId>
-		<artifactId>ncyp</artifactId>
+		<artifactId>spring-netty</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 	<properties>

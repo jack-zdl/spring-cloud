@@ -4,13 +4,13 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.cyp.chx</groupId>
-	<artifactId>ncyp</artifactId>
+	<artifactId>spring-netty</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>ncyp-customer-rcentor</module>
-		<module>ncyp-provice-rcentor</module>
+		<module>ncyp-customer-rcenter</module>
+		<module>ncyp-provice-rcenter</module>
         <module>ncyp-pub-common</module>
 		<module>ncyp-rcenter</module>
     </modules>

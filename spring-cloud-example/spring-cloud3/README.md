@@ -8,4 +8,9 @@
     eureka:
       instance:
         instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+
+
+
+
+
 ```
