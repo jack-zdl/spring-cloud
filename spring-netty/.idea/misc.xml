@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/ncyp-customer-rcenter/pom.xml" />
         <option value="$PROJECT_DIR$/ncyp-provice-rcenter/pom.xml" />
+        <option value="$PROJECT_DIR$/ncyp-common/pom.xml" />
       </list>
     </option>
   </component>

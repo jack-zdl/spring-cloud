@@ -22,7 +22,7 @@ public class TestController {
     @RequestMapping("/test")
     public String test(){
         try {
-            HelloService service=rpcServiceFactory.createByName(HelloService.class,"companyA");
+            HelloService service=rpcServiceFactory.createByName(HelloService.class,"provice");
             String name=service.hello("asdas");
             System.out.println(name);
             System.out.println("==========:"+JSONObject.toJSONString(rpcConfig.getRegistAddress()));
@@ -38,7 +38,7 @@ public class TestController {
         int fail=0;
         for(int i=0;i<10000;i++){
             try {
-                HelloService service=rpcServiceFactory.createByName(HelloService.class,"companyA");
+                HelloService service=rpcServiceFactory.createByName(HelloService.class,"provice");
                 String name=service.hello("asdas");
                 success++;
 
@@ -53,7 +53,7 @@ public class TestController {
     @RequestMapping("/test2")
     public String test2(){
         try {
-            HelloService service=rpcServiceFactory.createByName(HelloService.class,"companyA");
+            HelloService service=rpcServiceFactory.createByName(HelloService.class,"provice");
             service.test2();
         } catch (Exception e) {
             e.printStackTrace();

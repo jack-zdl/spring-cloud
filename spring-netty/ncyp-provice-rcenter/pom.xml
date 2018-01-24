@@ -54,6 +54,11 @@
 			<artifactId>protobuf-java</artifactId>
 			<version>3.5.0</version>
 		</dependency>
+		<dependency>
+			<groupId>com.cyp.chx</groupId>
+			<artifactId>ncyp-common</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>

@@ -1,0 +1,12 @@
+com\cyp\chx\common\entity\CommonBaseObject.class
+com\cyp\chx\common\util\constants\MessageConstants.class
+com\cyp\chx\common\util\response\RespJson.class
+com\cyp\chx\common\aaa.class
+com\cyp\chx\common\util\constants\AuthorityConstants.class
+com\cyp\chx\common\util\response\QueryRespJson.class
+com\cyp\chx\common\entity\TripartiteagreementTemplateEntity.class
+com\cyp\chx\common\util\response\RespJsonFactory.class
+com\cyp\chx\common\service\RpcCommonService.class
+com\cyp\chx\common\util\response\ParamRespJson.class
+com\cyp\chx\common\util\constants\SessionConstants.class
+com\cyp\chx\common\util\constants\UserGroupConstants.class

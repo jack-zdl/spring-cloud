@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ncyp-common" />
         <module name="ncyp-customer-rcenter" />
         <module name="ncyp-provice-rcenter" />
         <module name="ncyp-pub-common" />
@@ -16,6 +17,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ncyp" target="1.8" />
+      <module name="ncyp-common" target="1.8" />
       <module name="ncyp-customer-rcenter" target="1.8" />
       <module name="ncyp-provice-rcenter" target="1.8" />
       <module name="ncyp-pub-common" target="1.8" />

@@ -3,12 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ncyp.iml" filepath="$PROJECT_DIR$/ncyp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-common/ncyp-common.iml" filepath="$PROJECT_DIR$/ncyp-common/ncyp-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/ncyp-customer-rcenter/ncyp-customer-rcenter.iml" filepath="$PROJECT_DIR$/ncyp-customer-rcenter/ncyp-customer-rcenter.iml" />
       <module fileurl="file://$PROJECT_DIR$/ncyp-provice-rcenter/ncyp-provice-rcenter.iml" filepath="$PROJECT_DIR$/ncyp-provice-rcenter/ncyp-provice-rcenter.iml" />
       <module fileurl="file://$PROJECT_DIR$/ncyp-pub-common/ncyp-pub-common.iml" filepath="$PROJECT_DIR$/ncyp-pub-common/ncyp-pub-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/ncyp-rcenter/ncyp-rcenter.iml" filepath="$PROJECT_DIR$/ncyp-rcenter/ncyp-rcenter.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ncyp-customer-rcenter/ncyp-rcenter (1).iml" filepath="$PROJECT_DIR$/ncyp-customer-rcenter/ncyp-rcenter (1).iml" />
-      <module fileurl="file://$PROJECT_DIR$/ncyp-provice-rcenter/ncyp-rcenter (2).iml" filepath="$PROJECT_DIR$/ncyp-provice-rcenter/ncyp-rcenter (2).iml" />
+      <module fileurl="file://E:\ceying\CeYingProject\spring-cloud\spring-netty\ncyp-customer-rcenter\ncyp-rcenter (1).iml" filepath="E:\ceying\CeYingProject\spring-cloud\spring-netty\ncyp-customer-rcenter\ncyp-rcenter (1).iml" />
+      <module fileurl="file://E:\ceying\CeYingProject\spring-cloud\spring-netty\ncyp-provice-rcenter\ncyp-rcenter (2).iml" filepath="E:\ceying\CeYingProject\spring-cloud\spring-netty\ncyp-provice-rcenter\ncyp-rcenter (2).iml" />
     </modules>
   </component>
 </project>

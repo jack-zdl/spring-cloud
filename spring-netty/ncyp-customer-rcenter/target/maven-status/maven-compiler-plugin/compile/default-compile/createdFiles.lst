@@ -1,0 +1,5 @@
+com\cyp\chx\rcenter\service\Person.class
+com\cyp\chx\rcenter\controller\CommonController.class
+com\cyp\chx\rcenter\controller\TestController.class
+com\cyp\chx\rcenter\RcenterCustomerApplication.class
+com\cyp\chx\rcenter\service\HelloService.class

@@ -1,0 +1,6 @@
+com\cyp\chx\rcenter\service\Person.class
+com\cyp\chx\rcenter\service\HelloServiceImpl.class
+com\cyp\chx\rcenter\service\RpcObjectServiceImpl.class
+com\cyp\chx\rcenter\service\TestCommon.class
+com\cyp\chx\rcenter\RcenterProviceApplication.class
+com\cyp\chx\rcenter\service\HelloService.class
