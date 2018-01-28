@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-cloud1/microservice-consumer-movie/microservice-consumer-movie (1).iml" filepath="$PROJECT_DIR$/spring-cloud1/microservice-consumer-movie/microservice-consumer-movie (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud3/microservice-consumer-movie/microservice-consumer-movie (2).iml" filepath="$PROJECT_DIR$/spring-cloud3/microservice-consumer-movie/microservice-consumer-movie (2).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud5/microservice-consumer-movie-feign/microservice-consumer-movie-feign.iml" filepath="$PROJECT_DIR$/spring-cloud5/microservice-consumer-movie-feign/microservice-consumer-movie-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud5/microservice-consumer-movie-feign-customizing/microservice-consumer-movie-feign-customizing.iml" filepath="$PROJECT_DIR$/spring-cloud5/microservice-consumer-movie-feign-customizing/microservice-consumer-movie-feign-customizing.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud4/microservice-consumer-movie-ribbon/microservice-consumer-movie-ribbon.iml" filepath="$PROJECT_DIR$/spring-cloud4/microservice-consumer-movie-ribbon/microservice-consumer-movie-ribbon.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud5/microservice-consumer-movie-ribbon/microservice-consumer-movie-ribbon (1).iml" filepath="$PROJECT_DIR$/spring-cloud5/microservice-consumer-movie-ribbon/microservice-consumer-movie-ribbon (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud4/microservice-consumer-movie-ribbon-properties-customizing/microservice-consumer-movie-ribbon-properties-customizing.iml" filepath="$PROJECT_DIR$/spring-cloud4/microservice-consumer-movie-ribbon-properties-customizing/microservice-consumer-movie-ribbon-properties-customizing.iml" />
@@ -28,6 +29,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-cloud2/spring-cloud2.iml" filepath="$PROJECT_DIR$/spring-cloud2/spring-cloud2.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud3/spring-cloud3.iml" filepath="$PROJECT_DIR$/spring-cloud3/spring-cloud3.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud4/spring-cloud4.iml" filepath="$PROJECT_DIR$/spring-cloud4/spring-cloud4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud5/spring-cloud5.iml" filepath="$PROJECT_DIR$/spring-cloud5/spring-cloud5.iml" />
     </modules>
   </component>
 </project>

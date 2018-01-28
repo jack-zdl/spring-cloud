@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
  * 开发时间: 2017/11/30 7:31<br>
  * <br>
  */
-@FeignClient("microservice-provider-user")
+@FeignClient(name = "microservice-provider-user")
 public interface UserFeginClient {
 
     /**

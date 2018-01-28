@@ -3,9 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>microservice-discovery-eureka</artifactId>
+	<artifactId>microservice-consumer-movie-feign-customizing</artifactId>
 	<packaging>jar</packaging>
-
 
 
 	<parent>
@@ -22,21 +21,32 @@
 	</properties>
 
 	<dependencies>
-		 <!-- Dalston.SR4版本下暂时无法使用-->
-		<!--<dependency>-->
-			<!--<groupId>org.springframework.boot</groupId>-->
-			<!--<artifactId>spring-cloud-starter-eureka-server</artifactId>-->
-		<!--</dependency>-->
-		<!-- 使用security来控制权限
-			使用登录来查看eureka
-		-->
 		<dependency>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-security</artifactId>
-	</dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-netflix-eureka-server</artifactId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
+		<!-- 监控管理模块的东西 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<!-- 添加ribbon的模块
+		 	eureka本身已经自带了
+		 -->
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.cloud</groupId>-->
+			<!--<artifactId>spring-cloud-starter-ribbon</artifactId>-->
+		<!--</dependency>-->
+
+		<!-- 添加feign的依赖 -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-feign</artifactId>
 		</dependency>
 	</dependencies>
 

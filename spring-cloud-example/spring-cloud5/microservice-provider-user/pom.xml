@@ -10,7 +10,7 @@
 
 	<parent>
 		<groupId>com.zhang.cloud</groupId>
-		<artifactId>microservice-spring-cloud</artifactId>
+		<artifactId>spring-cloud5</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>

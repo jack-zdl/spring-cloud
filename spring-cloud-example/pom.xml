@@ -41,6 +41,10 @@
 
 	<modules>
 		<module>spring-cloud1</module>
+		<module>spring-cloud2</module>
+		<module>spring-cloud3</module>
+		<module>spring-cloud4</module>
+		<module>spring-cloud5</module>
 	</modules>
 
 	<parent>
