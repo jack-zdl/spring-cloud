@@ -37,7 +37,7 @@
 		<!--引入 common-->
 		<dependency>
 			<groupId>com.ceying.chx</groupId>
-			<artifactId>ncyp-bank-common</artifactId>
+			<artifactId>ncyp-company-common</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
 		<!--mysql数据库连接 勿删-->

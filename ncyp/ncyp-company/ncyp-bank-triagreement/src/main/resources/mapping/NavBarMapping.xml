@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ceying.chx.common.dao.NavBarDao">
+    <resultMap id="NavBarResultMap" type="com.ceying.chx.common.dto.NavBarDto">
+        <id column="MENU_CODE" jdbcType="VARCHAR" property="menuCode" />
+        <!--<id column="KIND_CODE" jdbcType="VARCHAR" property="kindCode" />
+        <result column="TRANS_CODE" jdbcType="VARCHAR" property="transCode" />
+        <result column="SUB_TRANS_CODE" jdbcType="VARCHAR" property="subTransCode" />
+        <result column="MENU_NAME" jdbcType="VARCHAR" property="menuName" />
+        <result column="MENU_ARG" jdbcType="VARCHAR" property="menuArg" />
+        <result column="MENU_ICON" jdbcType="VARCHAR" property="menuIcon" />
+        <result column="MENU_URL" jdbcType="VARCHAR" property="menuUrl" />
+        <result column="WINDOW_TYPE" jdbcType="VARCHAR" property="windowType" />
+        <result column="WINDOW_MODEL" jdbcType="VARCHAR" property="windowModel" />
+        <result column="TIP" jdbcType="VARCHAR" property="tip" />
+        <result column="HOT_KEY" jdbcType="VARCHAR" property="hotKey" />
+        <result column="PARENT_CODE" jdbcType="VARCHAR" property="parentCode" />
+        <result column="ORDER_NO" jdbcType="DECIMAL" property="orderNo" />
+        <result column="OPEN_FLAG" jdbcType="VARCHAR" property="openFlag" />
+        <result column="TREE_IDX" jdbcType="VARCHAR" property="treeIdx" />
+        <result column="REMARK" jdbcType="VARCHAR" property="remark" />-->
+        <result column="parentName" jdbcType="VARCHAR" property="parentName" />
+        <result column="attribute1" jdbcType="VARCHAR" property="attribute1" />
+        <result column="attribute2" jdbcType="VARCHAR" property="attribute2" />
+        <result column="userId"  jdbcType="VARCHAR" property="userId" />
+        <result column="MENU_CODE" jdbcType="VARCHAR" property="id" />
+        <result column="MENU_NAME"  jdbcType="VARCHAR" property="name" />
+
+        <collection column ="{menuCode=MENU_CODE,userId=userId}" ofType="com.ceying.chx.base.dto.NavBarDto" property="children" select="queryNavBar"></collection>
+    </resultMap>
+   <!-- <select id="queryNavBar" parameterType="java.lang.String" statementType="CALLABLE" resultMap="NavBarResultMap">
+    {
+    call showChildMenu(
+    #{menuCode,mode=IN,jdbcType=VARCHAR},
+    #{userId,mode=IN,jdbcType=VARCHAR}
+    )
+    }
+    </select>-->
+    <select id="queryNavBar" parameterType="java.util.Map"  resultMap="NavBarResultMap">
+         select distinct a.*,b.user_id as userId FROM(
+        select t.*,t1.menu_name as parent_name,t.menu_url as attribute1,t.menu_icon as attribute2 FROM tsys_menu t left join tsys_menu t1 on t.parent_code=t1.menu_code
+        where t.parent_code= #{menuCode,jdbcType=VARCHAR})a,tsys_user_rights b WHERE a.menu_code=b.trans_code and b.user_id= #{userId,jdbcType=VARCHAR}
+    </select>
+
+</mapper>

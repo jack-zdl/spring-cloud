@@ -15,6 +15,7 @@
 		<module>ncyp-platform</module>
         <module>ncyp-pub-front</module>
         <module>ncyp-pub-common</module>
+		<module>ncyp-bank-triagreement</module>
     </modules>
 
 	<parent>

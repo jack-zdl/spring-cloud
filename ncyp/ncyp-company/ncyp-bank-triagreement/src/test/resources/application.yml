@@ -1,0 +1,17 @@
+
+server:
+  port: 8182
+spring:
+  application:
+    name: ncyp-bank-biz
+
+eureka:
+  client:
+    healthcheck:    # eureka添加健康检查
+      enabled: false
+    serviceUrl:
+      defaultZone: http://localhost:8181/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+

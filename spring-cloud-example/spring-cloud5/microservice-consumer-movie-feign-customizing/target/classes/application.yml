@@ -15,3 +15,7 @@ eureka:
   instance:
     prefer-ip-address: true
 #    instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+
+logging:
+  level:
+    com.zhang.cloud.microservicesimpleconsumermovie.feign.UserFeginClient: DEBUG

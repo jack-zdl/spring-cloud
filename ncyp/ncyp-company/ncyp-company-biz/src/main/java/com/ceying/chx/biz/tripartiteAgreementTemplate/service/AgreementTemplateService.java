@@ -2,6 +2,7 @@ package com.ceying.chx.biz.tripartiteAgreementTemplate.service;
 
 
 
+import com.ceying.chx.common.entity.triagreementtemp.TripartiteagreementTemplate;
 import com.ceying.chx.common.util.response.RespJson;
 
 import javax.servlet.http.HttpServletRequest;

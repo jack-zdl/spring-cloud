@@ -30,4 +30,8 @@ eureka:
   instance:
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+    metadata-map:               ## 自定义元数据
+      zone: ABC
+      deleizhang: BBC
+
 

@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 /**
  * 功能说明: 建立User的api调用feign的接口 <br>
+ *     使用Configuration1类做的配置文件
  * 系统版本: 1.0 <br>
  * 开发人员: zhangdl <br>
  * 开发时间: 2017/11/30 7:31<br>

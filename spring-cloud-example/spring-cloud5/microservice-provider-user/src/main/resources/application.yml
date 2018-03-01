@@ -30,4 +30,8 @@ eureka:
   instance:
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+    metadata-map:               ## 自定义元数据   http://localhost:8761/eureka/apps/microservice-provider-user/ 来查看信息
+      zone: ABC   # eureka可以理解的元数据
+      deleizhang: BBC   # 不会影响到客户端的行为
+#    lease-renewal-interval-in-seconds: 5    # 心跳时间的设置，但是做好别动，这有个续期的计算
 

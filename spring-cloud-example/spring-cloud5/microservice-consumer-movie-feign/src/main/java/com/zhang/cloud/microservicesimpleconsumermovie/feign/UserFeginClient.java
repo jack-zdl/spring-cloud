@@ -11,11 +11,12 @@ import org.springframework.web.bind.annotation.*;
  * 开发时间: 2017/11/30 7:31<br>
  * <br>
  */
-@FeignClient(name = "microservice-provider-user")
+@FeignClient(name = "microservice-provider-user")//name赋值微服务名称
 public interface UserFeginClient {
 
     /**
      * 用来指明指向哪个url
+     * spring mvc 的注解
      * @param id
      * @return
      */

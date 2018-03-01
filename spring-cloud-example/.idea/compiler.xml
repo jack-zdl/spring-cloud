@@ -17,6 +17,7 @@
         <module name="microservice-discovery-eureka" />
         <module name="microservice-discovery-eureka (1)" />
         <module name="microservice-discovery-eureka (2)" />
+        <module name="microservice-discovery-eureka-ha" />
         <module name="microservice-provider-user" />
         <module name="microservice-provider-user (1)" />
         <module name="microservice-provider-user (2)" />
@@ -40,6 +41,7 @@
       <module name="microservice-discovery-eureka" target="1.5" />
       <module name="microservice-discovery-eureka (1)" target="1.6" />
       <module name="microservice-discovery-eureka (2)" target="1.8" />
+      <module name="microservice-discovery-eureka-ha" target="1.8" />
       <module name="microservice-provider-user" target="1.6" />
       <module name="microservice-provider-user (1)" target="1.5" />
       <module name="microservice-provider-user (2)" target="1.5" />

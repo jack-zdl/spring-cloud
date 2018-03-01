@@ -15,3 +15,28 @@ eureka:
   instance:
     prefer-ip-address: true
 #    instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+
+logging:
+  level:
+    com.zhang.cloud.microservicesimpleconsumermovie.feign.UserFeginClient: DEBUG
+
+# 设置断路器的短路时间，来解决第一访问出现timeout错误
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          timeoutInMillisecond: 5000
+
+# 禁用掉超时时间
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        timeout:
+#          enabled: false
+
+# feign中会自带hystrix,所以可以禁用
+#feign:
+#  hystrix:
+#    enabled: false
