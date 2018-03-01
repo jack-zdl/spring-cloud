@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ncyp-company.iml" filepath="$PROJECT_DIR$/ncyp-company.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-company-biz/ncyp-company-biz.iml" filepath="$PROJECT_DIR$/ncyp-company-biz/ncyp-company-biz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-company-common/ncyp-company-common.iml" filepath="$PROJECT_DIR$/ncyp-company-common/ncyp-company-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-company-eureka/ncyp-company-eureka.iml" filepath="$PROJECT_DIR$/ncyp-company-eureka/ncyp-company-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-company-front/ncyp-company-front.iml" filepath="$PROJECT_DIR$/ncyp-company-front/ncyp-company-front.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-company-gateway/ncyp-company-gateway.iml" filepath="$PROJECT_DIR$/ncyp-company-gateway/ncyp-company-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-company-triagreement/ncyp-company-triagreement.iml" filepath="$PROJECT_DIR$/ncyp-company-triagreement/ncyp-company-triagreement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-company-webx/ncyp-company-webx.iml" filepath="$PROJECT_DIR$/ncyp-company-webx/ncyp-company-webx.iml" />
+    </modules>
+  </component>
+</project>

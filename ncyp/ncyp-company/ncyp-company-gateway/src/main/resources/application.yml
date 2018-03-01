@@ -1,0 +1,28 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:  http://peer1:8761/eureka/,http://peer2:8762/eureka/,http://peer3:8763/eureka/
+server:
+  port: 8182
+spring:
+  application:
+    name: ncyp-company-gateway
+
+# 关闭安全限制
+management:
+  security:
+    enabled: false
+
+ # 路由配置
+zuul:
+  routes:
+    api-a:
+      path: /biz/**
+      serviceId: ncyp-company-biz
+    api-b:
+      path: /agreement/**
+      serviceId: ncyp-company-triagreement
+ # 配置超时时间断路器才有效果（加入Zuul）
+ribbon:
+  ReadTimeout: 30000
+  ConnectTimeout: 30000

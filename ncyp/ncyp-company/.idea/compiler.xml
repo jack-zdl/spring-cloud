@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ncyp-company-biz" />
+        <module name="ncyp-company-common" />
+        <module name="ncyp-company-eureka" />
+        <module name="ncyp-company-front" />
+        <module name="ncyp-company-gateway" />
+        <module name="ncyp-company-triagreement" />
+        <module name="ncyp-company-webx" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ncyp-company" target="1.6" />
+      <module name="ncyp-company-biz" target="1.8" />
+      <module name="ncyp-company-common" target="1.8" />
+      <module name="ncyp-company-eureka" target="1.8" />
+      <module name="ncyp-company-front" target="1.8" />
+      <module name="ncyp-company-gateway" target="1.8" />
+      <module name="ncyp-company-triagreement" target="1.8" />
+      <module name="ncyp-company-webx" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
