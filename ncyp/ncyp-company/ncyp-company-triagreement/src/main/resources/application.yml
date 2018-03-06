@@ -25,3 +25,7 @@ spring:
 mybatis:
   mapperLocations: classpath:mapping/*.xml
   type-aliases-package: com.ceying.chx.common.dto,com.ceying.chx.common.dao,com.ceying.chx.common.entity
+## 当post /refresh方式刷新配置 时 ，会有个安全限制，关掉就可以了
+management:
+  security:
+    enabled: false

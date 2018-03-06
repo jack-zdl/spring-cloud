@@ -3,7 +3,7 @@ package com.ceying.chx.biz.tripartiteAgreementTemplate.controller;
 
 import com.ceying.chx.biz.tripartiteAgreementTemplate.service.AgreementTemplateService;
 //import com.ceying.chx.common.entity.triagreementtemp.TripartiteagreementTemplateEntity;
-import com.ceying.chx.common.util.response.RespJson;
+//import com.ceying.chx.common.util.response.RespJson;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;

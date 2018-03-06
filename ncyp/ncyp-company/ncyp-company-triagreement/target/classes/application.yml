@@ -25,3 +25,6 @@ spring:
 mybatis:
   mapperLocations: classpath:mapping/*.xml
   type-aliases-package: com.ceying.chx.common.dto,com.ceying.chx.common.dao,com.ceying.chx.common.entity
+management:
+  security:
+    enabled: false
