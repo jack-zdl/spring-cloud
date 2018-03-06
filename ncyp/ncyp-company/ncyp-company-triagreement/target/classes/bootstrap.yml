@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: my-client
+  cloud:
+    config:
+      uri:  http://localhost:8768
+
+      ## 必须使用bootstrap.yml

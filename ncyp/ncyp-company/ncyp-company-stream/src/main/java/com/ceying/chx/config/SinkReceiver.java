@@ -16,6 +16,12 @@ import org.springframework.cloud.stream.messaging.Sink;
 public class SinkReceiver {
     private static Logger logger = LoggerFactory.getLogger(SinkReceiver.class);
 
+
+    /**
+     * 注册为消息中间件的事件监听器
+     * 注册为input消息通道的监听处理器
+     * @param payload
+     */
     @StreamListener(Sink.INPUT)
     public void receive(Object payload) {
         logger.info("Received: " + payload);

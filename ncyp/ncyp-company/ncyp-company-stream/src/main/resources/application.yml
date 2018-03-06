@@ -3,7 +3,7 @@ eureka:
     serviceUrl:
       defaultZone:  http://localhost:8761/eureka/ # ,http://peer2:8762/eureka/,http://peer3:8763/eureka/
 server:
-  port: 8764   # 4-7
+  port: 8765   # 4-7
 
 #spring:
 #  cloud:
