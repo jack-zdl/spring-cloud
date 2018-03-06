@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ceying.chx.common.dao.OrganizationDao">
+  <resultMap id="BaseResultMap" type="OrganizationEntity">
+    <id column="ORG_ID" jdbcType="VARCHAR" property="orgId" />
+    <result column="DIMENSION" jdbcType="VARCHAR" property="dimension" />
+    <result column="ORG_CODE" jdbcType="VARCHAR" property="orgCode" />
+    <result column="ORG_NAME" jdbcType="VARCHAR" property="orgName" />
+    <result column="PARENT_ID" jdbcType="VARCHAR" property="parentId" />
+    <result column="MANAGE_ID" jdbcType="VARCHAR" property="manageId" />
+    <result column="POSITION_CODE" jdbcType="VARCHAR" property="positionCode" />
+    <result column="ORG_CATE" jdbcType="VARCHAR" property="orgCate" />
+    <result column="ORG_LEVEL" jdbcType="VARCHAR" property="orgLevel" />
+    <result column="ORG_ORDER" jdbcType="DECIMAL" property="orgOrder" />
+    <result column="ORG_PATH" jdbcType="VARCHAR" property="orgPath" />
+    <result column="SSO_ORG_CODE" jdbcType="VARCHAR" property="ssoOrgCode" />
+    <result column="SSO_PARENT_CODE" jdbcType="VARCHAR" property="ssoParentCode" />
+    <result column="EXT_ID" jdbcType="VARCHAR" property="extId" />
+    <result column="REMARK" jdbcType="VARCHAR" property="remark" />
+    <result column="STATUS" jdbcType="DECIMAL" property="status" />
+    <result column="TENANT_ID" jdbcType="DECIMAL" property="tenantId" />
+    <result column="SHORTORGNAME" jdbcType="VARCHAR" property="shortorgname" />
+    <result column="CREATEDATE" jdbcType="VARCHAR" property="createdate" />
+    <result column="LASTMODIFIEDON" jdbcType="VARCHAR" property="lastmodifiedon" />
+    <result column="PLATFORMSUPPLIERRATE" jdbcType="FLOAT" property="platformsupplierrate" />
+    <result column="CORECOMPANYRATE" jdbcType="FLOAT" property="corecompanyrate" />
+    <result column="AREAID" jdbcType="VARCHAR" property="areaid" />
+    <result column="FINANCENUMBER" jdbcType="DECIMAL" property="financenumber" />
+    <result column="ADDRESS" jdbcType="VARCHAR" property="address" />
+    <result column="LEGALPERSON" jdbcType="VARCHAR" property="legalperson" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    ORG_ID, DIMENSION, ORG_CODE, ORG_NAME, PARENT_ID, MANAGE_ID, POSITION_CODE, ORG_CATE,
+    ORG_LEVEL, ORG_ORDER, ORG_PATH, SSO_ORG_CODE, SSO_PARENT_CODE, EXT_ID, REMARK, STATUS,
+    TENANT_ID, SHORTORGNAME, CREATEDATE, LASTMODIFIEDON, PLATFORMSUPPLIERRATE, CORECOMPANYRATE,
+    AREAID, FINANCENUMBER, ADDRESS, LEGALPERSON
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from TSYS_ORGANIZATION
+    where ORG_ID = #{orgId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from TSYS_ORGANIZATION
+    where ORG_ID = #{orgId,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="OrganizationEntity">
+    insert into TSYS_ORGANIZATION (ORG_ID, DIMENSION, ORG_CODE,
+      ORG_NAME, PARENT_ID, MANAGE_ID,
+      POSITION_CODE, ORG_CATE, ORG_LEVEL,
+      ORG_ORDER, ORG_PATH, SSO_ORG_CODE,
+      SSO_PARENT_CODE, EXT_ID, REMARK,
+      STATUS, TENANT_ID, SHORTORGNAME,
+      CREATEDATE, LASTMODIFIEDON, PLATFORMSUPPLIERRATE,
+      CORECOMPANYRATE, AREAID, FINANCENUMBER,
+      ADDRESS, LEGALPERSON)
+    values (#{orgId,jdbcType=VARCHAR}, #{dimension,jdbcType=VARCHAR}, #{orgCode,jdbcType=VARCHAR},
+      #{orgName,jdbcType=VARCHAR}, #{parentId,jdbcType=VARCHAR}, #{manageId,jdbcType=VARCHAR},
+      #{positionCode,jdbcType=VARCHAR}, #{orgCate,jdbcType=VARCHAR}, #{orgLevel,jdbcType=VARCHAR},
+      #{orgOrder,jdbcType=DECIMAL}, #{orgPath,jdbcType=VARCHAR}, #{ssoOrgCode,jdbcType=VARCHAR},
+      #{ssoParentCode,jdbcType=VARCHAR}, #{extId,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR},
+      #{status,jdbcType=DECIMAL}, #{tenantId,jdbcType=DECIMAL}, #{shortorgname,jdbcType=VARCHAR},
+      #{createdate,jdbcType=VARCHAR}, #{lastmodifiedon,jdbcType=VARCHAR}, #{platformsupplierrate,jdbcType=FLOAT},
+      #{corecompanyrate,jdbcType=FLOAT}, #{areaid,jdbcType=VARCHAR}, #{financenumber,jdbcType=DECIMAL},
+      #{address,jdbcType=VARCHAR}, #{legalperson,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="OrganizationEntity">
+    insert into TSYS_ORGANIZATION
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="orgId != null">
+        ORG_ID,
+      </if>
+      <if test="dimension != null">
+        DIMENSION,
+      </if>
+      <if test="orgCode != null">
+        ORG_CODE,
+      </if>
+      <if test="orgName != null">
+        ORG_NAME,
+      </if>
+      <if test="parentId != null">
+        PARENT_ID,
+      </if>
+      <if test="manageId != null">
+        MANAGE_ID,
+      </if>
+      <if test="positionCode != null">
+        POSITION_CODE,
+      </if>
+      <if test="orgCate != null">
+        ORG_CATE,
+      </if>
+      <if test="orgLevel != null">
+        ORG_LEVEL,
+      </if>
+      <if test="orgOrder != null">
+        ORG_ORDER,
+      </if>
+      <if test="orgPath != null">
+        ORG_PATH,
+      </if>
+      <if test="ssoOrgCode != null">
+        SSO_ORG_CODE,
+      </if>
+      <if test="ssoParentCode != null">
+        SSO_PARENT_CODE,
+      </if>
+      <if test="extId != null">
+        EXT_ID,
+      </if>
+      <if test="remark != null">
+        REMARK,
+      </if>
+      <if test="status != null">
+        STATUS,
+      </if>
+      <if test="tenantId != null">
+        TENANT_ID,
+      </if>
+      <if test="shortorgname != null">
+        SHORTORGNAME,
+      </if>
+      <if test="createdate != null">
+        CREATEDATE,
+      </if>
+      <if test="lastmodifiedon != null">
+        LASTMODIFIEDON,
+      </if>
+      <if test="platformsupplierrate != null">
+        PLATFORMSUPPLIERRATE,
+      </if>
+      <if test="corecompanyrate != null">
+        CORECOMPANYRATE,
+      </if>
+      <if test="areaid != null">
+        AREAID,
+      </if>
+      <if test="financenumber != null">
+        FINANCENUMBER,
+      </if>
+      <if test="address != null">
+        ADDRESS,
+      </if>
+      <if test="legalperson != null">
+        LEGALPERSON,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="orgId != null">
+        #{orgId,jdbcType=VARCHAR},
+      </if>
+      <if test="dimension != null">
+        #{dimension,jdbcType=VARCHAR},
+      </if>
+      <if test="orgCode != null">
+        #{orgCode,jdbcType=VARCHAR},
+      </if>
+      <if test="orgName != null">
+        #{orgName,jdbcType=VARCHAR},
+      </if>
+      <if test="parentId != null">
+        #{parentId,jdbcType=VARCHAR},
+      </if>
+      <if test="manageId != null">
+        #{manageId,jdbcType=VARCHAR},
+      </if>
+      <if test="positionCode != null">
+        #{positionCode,jdbcType=VARCHAR},
+      </if>
+      <if test="orgCate != null">
+        #{orgCate,jdbcType=VARCHAR},
+      </if>
+      <if test="orgLevel != null">
+        #{orgLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="orgOrder != null">
+        #{orgOrder,jdbcType=DECIMAL},
+      </if>
+      <if test="orgPath != null">
+        #{orgPath,jdbcType=VARCHAR},
+      </if>
+      <if test="ssoOrgCode != null">
+        #{ssoOrgCode,jdbcType=VARCHAR},
+      </if>
+      <if test="ssoParentCode != null">
+        #{ssoParentCode,jdbcType=VARCHAR},
+      </if>
+      <if test="extId != null">
+        #{extId,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=DECIMAL},
+      </if>
+      <if test="tenantId != null">
+        #{tenantId,jdbcType=DECIMAL},
+      </if>
+      <if test="shortorgname != null">
+        #{shortorgname,jdbcType=VARCHAR},
+      </if>
+      <if test="createdate != null">
+        #{createdate,jdbcType=VARCHAR},
+      </if>
+      <if test="lastmodifiedon != null">
+        #{lastmodifiedon,jdbcType=VARCHAR},
+      </if>
+      <if test="platformsupplierrate != null">
+        #{platformsupplierrate,jdbcType=FLOAT},
+      </if>
+      <if test="corecompanyrate != null">
+        #{corecompanyrate,jdbcType=FLOAT},
+      </if>
+      <if test="areaid != null">
+        #{areaid,jdbcType=VARCHAR},
+      </if>
+      <if test="financenumber != null">
+        #{financenumber,jdbcType=DECIMAL},
+      </if>
+      <if test="address != null">
+        #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="legalperson != null">
+        #{legalperson,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="OrganizationEntity">
+    update TSYS_ORGANIZATION
+    <set>
+      <if test="dimension != null">
+        DIMENSION = #{dimension,jdbcType=VARCHAR},
+      </if>
+      <if test="orgCode != null">
+        ORG_CODE = #{orgCode,jdbcType=VARCHAR},
+      </if>
+      <if test="orgName != null">
+        ORG_NAME = #{orgName,jdbcType=VARCHAR},
+      </if>
+      <if test="parentId != null">
+        PARENT_ID = #{parentId,jdbcType=VARCHAR},
+      </if>
+      <if test="manageId != null">
+        MANAGE_ID = #{manageId,jdbcType=VARCHAR},
+      </if>
+      <if test="positionCode != null">
+        POSITION_CODE = #{positionCode,jdbcType=VARCHAR},
+      </if>
+      <if test="orgCate != null">
+        ORG_CATE = #{orgCate,jdbcType=VARCHAR},
+      </if>
+      <if test="orgLevel != null">
+        ORG_LEVEL = #{orgLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="orgOrder != null">
+        ORG_ORDER = #{orgOrder,jdbcType=DECIMAL},
+      </if>
+      <if test="orgPath != null">
+        ORG_PATH = #{orgPath,jdbcType=VARCHAR},
+      </if>
+      <if test="ssoOrgCode != null">
+        SSO_ORG_CODE = #{ssoOrgCode,jdbcType=VARCHAR},
+      </if>
+      <if test="ssoParentCode != null">
+        SSO_PARENT_CODE = #{ssoParentCode,jdbcType=VARCHAR},
+      </if>
+      <if test="extId != null">
+        EXT_ID = #{extId,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        REMARK = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        STATUS = #{status,jdbcType=DECIMAL},
+      </if>
+      <if test="tenantId != null">
+        TENANT_ID = #{tenantId,jdbcType=DECIMAL},
+      </if>
+      <if test="shortorgname != null">
+        SHORTORGNAME = #{shortorgname,jdbcType=VARCHAR},
+      </if>
+      <if test="createdate != null">
+        CREATEDATE = #{createdate,jdbcType=VARCHAR},
+      </if>
+      <if test="lastmodifiedon != null">
+        LASTMODIFIEDON = #{lastmodifiedon,jdbcType=VARCHAR},
+      </if>
+      <if test="platformsupplierrate != null">
+        PLATFORMSUPPLIERRATE = #{platformsupplierrate,jdbcType=FLOAT},
+      </if>
+      <if test="corecompanyrate != null">
+        CORECOMPANYRATE = #{corecompanyrate,jdbcType=FLOAT},
+      </if>
+      <if test="areaid != null">
+        AREAID = #{areaid,jdbcType=VARCHAR},
+      </if>
+      <if test="financenumber != null">
+        FINANCENUMBER = #{financenumber,jdbcType=DECIMAL},
+      </if>
+      <if test="address != null">
+        ADDRESS = #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="legalperson != null">
+        LEGALPERSON = #{legalperson,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where ORG_ID = #{orgId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="OrganizationEntity">
+    update TSYS_ORGANIZATION
+    set DIMENSION = #{dimension,jdbcType=VARCHAR},
+      ORG_CODE = #{orgCode,jdbcType=VARCHAR},
+      ORG_NAME = #{orgName,jdbcType=VARCHAR},
+      PARENT_ID = #{parentId,jdbcType=VARCHAR},
+      MANAGE_ID = #{manageId,jdbcType=VARCHAR},
+      POSITION_CODE = #{positionCode,jdbcType=VARCHAR},
+      ORG_CATE = #{orgCate,jdbcType=VARCHAR},
+      ORG_LEVEL = #{orgLevel,jdbcType=VARCHAR},
+      ORG_ORDER = #{orgOrder,jdbcType=DECIMAL},
+      ORG_PATH = #{orgPath,jdbcType=VARCHAR},
+      SSO_ORG_CODE = #{ssoOrgCode,jdbcType=VARCHAR},
+      SSO_PARENT_CODE = #{ssoParentCode,jdbcType=VARCHAR},
+      EXT_ID = #{extId,jdbcType=VARCHAR},
+      REMARK = #{remark,jdbcType=VARCHAR},
+      STATUS = #{status,jdbcType=DECIMAL},
+      TENANT_ID = #{tenantId,jdbcType=DECIMAL},
+      SHORTORGNAME = #{shortorgname,jdbcType=VARCHAR},
+      CREATEDATE = #{createdate,jdbcType=VARCHAR},
+      LASTMODIFIEDON = #{lastmodifiedon,jdbcType=VARCHAR},
+      PLATFORMSUPPLIERRATE = #{platformsupplierrate,jdbcType=FLOAT},
+      CORECOMPANYRATE = #{corecompanyrate,jdbcType=FLOAT},
+      AREAID = #{areaid,jdbcType=VARCHAR},
+      FINANCENUMBER = #{financenumber,jdbcType=DECIMAL},
+      ADDRESS = #{address,jdbcType=VARCHAR},
+      LEGALPERSON = #{legalperson,jdbcType=VARCHAR}
+    where ORG_ID = #{orgId,jdbcType=VARCHAR}
+  </update>
+    <select id="list" parameterType="OrganizationEntity" resultType="OrganizationEntity">
+        select * from (
+        select a.*,rownum n from
+        (
+        select a.org_code,a.org_name,a.org_cate,a.org_level,a.status,a.areaid,a.parent_id,
+        a.manage_id,a.legalperson,a.address,to_char(a.platformsupplierrate,'fm99990.9999') platformsupplierrate,
+        b.corecompanysupplierrate,
+        c.contactcategory,
+        c.contactname,
+        c.cellphone,
+        c.telephone,
+        c.email,
+        c.address contactaddress,
+        d.amountlimits,
+        e.name areaname,
+        t1.c_caption orgcatename,
+        t2.c_caption orglevelname,
+        t3.c_caption statusname,
+        t4.c_caption contactcategoryname,
+        aa.org_name parentidname,
+        bb.org_name manageidname
+        from tsys_organization a,t_organizationrelation b,T_ORGANIZATIONCONTACTS c,T_CORECOMPANYQUOTA d,T_AREAS e,
+        tsys_organization aa,tsys_organization bb,
+        TDICTIONARY t1,TDICTIONARY t2,TDICTIONARY t3，TDICTIONARY t4
+        WHERE a.org_id=b.ourorgid and a.org_id=c.orgid and a.org_id=d.corecompanyid and a.areaid=e.urid and a.parent_id=aa.org_id and a.manage_id=bb.org_id
+        and t1.l_keyno = '9999004' and t1.c_keyvalue=a.org_cate
+        and t2.l_keyno = '9999005' and t2.c_keyvalue=a.org_level
+        and t3.l_keyno = '9999008' and t3.c_keyvalue=to_char(a.status)
+        and t4.l_keyno = '9999072' and t4.c_keyvalue=c.contactcategory
+        <if test="org_code != null and org_code!=''">
+            and a.org_code = #{org_code,jdbcType=VARCHAR}
+        </if>
+        <if test="org_name != null and org_name!=''">
+            and a.org_name like concat('%',concat(#{org_name,jdbcType=VARCHAR},'%'))
+        </if>
+        <if test="org_cate != null and org_cate!=''">
+            and a.org_cate = #{org_cate,jdbcType=VARCHAR}
+        </if>
+        <if test="org_level != null and org_level!=''">
+            and a.org_level = #{org_level,jdbcType=VARCHAR}
+        </if>
+        <if test="status != null and status!=''">
+            and a.status =#{status,jdbcType=VARCHAR}
+        </if>
+        <if test="areaid != null and areaid!=''">
+            and a.areaid = #{areaid,jdbcType=VARCHAR}
+        </if>
+        <if test="parent_id != null and parent_id!=''">
+            and a.parent_id = #{parent_id,jdbcType=VARCHAR}
+        </if>
+        <if test="parent_id != null and parent_id!=''">
+            and a.parent_id = #{parent_id,jdbcType=VARCHAR}
+        </if>
+        ) a where 1=1
+        <if test="limit != null and limit!=''">
+            and rownum <![CDATA[ <= ]]> #{limit,jdbcType=VARCHAR}
+        </if>
+        ) where 1=1
+        <if test="start != null and start!=''">
+            and n>= #{start,jdbcType=VARCHAR}
+        </if>
+
+    </select>
+</mapper>

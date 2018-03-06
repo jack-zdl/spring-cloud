@@ -21,9 +21,13 @@
         <module>ncyp-company-eureka</module>
         <module>ncyp-company-front</module>
         <module>ncyp-company-biz</module>
-		 <module>ncyp-company-triagreement</module>
-		  <module>ncyp-company-gateway</module>
+        <module>ncyp-company-triagreement</module>
+        <module>ncyp-company-gateway</module>
         <module>ncyp-company-webx</module>
+        <module>ncyp-company-stream</module>
+        <module>ncyp-company-sleuth</module>
+        <module>ncyp-company-config-server</module>
+        <module>ncyp-company-bus</module>
     </modules>
 
 </project>

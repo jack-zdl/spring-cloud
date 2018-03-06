@@ -15,4 +15,7 @@ eureka:
       default-zone: http://user:password123@localhost:8761/eureka  # http://user:password123@localhost:8761/eureka  # http://localhost:8761/eureka
     register-with-eureka: false    # registerWithEureka表示是否注册自身到eureka服务器，但是目前是单点模式，不能允许这个动作，所以设置为false，在集群模式时就可以放开了，为了便于访问
     fetch-registry: false    #表示禁止注册中心注册“注册中心项目（cf-eureka）”本身
+#  dashboard:                  # 注意将多个配置块 尽量合并
+#    enabled: true
+#    path: /x
 

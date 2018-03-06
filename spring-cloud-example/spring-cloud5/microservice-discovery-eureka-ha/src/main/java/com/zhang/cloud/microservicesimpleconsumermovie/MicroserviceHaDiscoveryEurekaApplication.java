@@ -8,10 +8,10 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 @SpringBootApplication
 //@EnableDiscoveryClient   //表明这是服务发现的
 @EnableEurekaServer        //服务发现的服务端
-public class MicroserviceDiscoveryEurekaApplication {
+public class MicroserviceHaDiscoveryEurekaApplication {
 
 
 	public static void main(String[] args) {
-		SpringApplication.run(MicroserviceDiscoveryEurekaApplication.class, args);
+		SpringApplication.run(MicroserviceHaDiscoveryEurekaApplication.class, args);
 	}
 }

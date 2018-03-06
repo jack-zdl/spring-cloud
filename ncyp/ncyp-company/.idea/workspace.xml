@@ -10,6 +10,10 @@
     <ignored path="$PROJECT_DIR$/ncyp-company-gateway/target/" />
     <ignored path="$PROJECT_DIR$/ncyp-company-webx/target/" />
     <ignored path="$PROJECT_DIR$/ncyp-company-triagreement/target/" />
+    <ignored path="$PROJECT_DIR$/ncyp-company-stream/target/" />
+    <ignored path="$PROJECT_DIR$/ncyp-company-config-server/target/" />
+    <ignored path="$PROJECT_DIR$/ncyp-company-bus/target/" />
+    <ignored path="$PROJECT_DIR$/ncyp-company-sleuth/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,98 +23,80 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ncyp-company-gateway/src/main/resources/application.yml">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ncyp-company-stream/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+            <state relative-caret-position="874">
+              <caret line="38" column="71" lean-forward="false" selection-start-line="38" selection-start-column="71" selection-end-line="38" selection-end-column="71" />
               <folding />
             </state>
           </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+            <state />
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="AccessFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ncyp-company-gateway/src/main/java/com/ceying/chx/config/AccessFilter.java">
+      <file leaf-file-name="SinkReceiver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ncyp-company-stream/src/main/java/com/ceying/chx/config/SinkReceiver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="151">
+              <caret line="16" column="71" lean-forward="false" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#412#413#0" expanded="true" />
-                <element signature="e#440#441#0" expanded="true" />
-                <element signature="e#485#486#0" expanded="true" />
-                <element signature="e#509#510#0" expanded="true" />
-                <element signature="e#559#560#0" expanded="true" />
-                <element signature="e#586#587#0" expanded="true" />
+                <element signature="e#656#657#0" expanded="true" />
+                <element signature="e#707#708#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NcypBankBizApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ncyp-company-biz/src/main/java/com/ceying/chx/NcypBankBizApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HelloController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ncyp-company-biz/src/main/java/com/ceying/chx/biz/base/controller/HelloController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#478#479#0" expanded="true" />
-                <element signature="e#529#530#0" expanded="true" />
-                <element signature="e#588#589#0" expanded="true" />
-                <element signature="e#636#637#0" expanded="true" />
-                <element signature="e#697#698#0" expanded="true" />
-                <element signature="e#740#741#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HelloController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ncyp-company-triagreement/src/main/java/com/ceying/chx/biz/tripartiteAgreementTemplate/controller/HelloController.java">
+      <file leaf-file-name="SinkApplicationTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ncyp-company-stream/src/test/java/com.ceying.chx/SinkApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+              <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="32" />
               <folding>
-                <element signature="e#501#502#0" expanded="true" />
-                <element signature="e#558#559#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ncyp-company-biz/src/main/resources/application.yml">
+      <file leaf-file-name="Sink.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-stream/1.3.0.RELEASE/spring-cloud-stream-1.3.0.RELEASE.jar!/org/springframework/cloud/stream/messaging/Sink.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+            <state relative-caret-position="138">
+              <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NcypBankBizApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ncyp-company-triagreement/src/main/java/com/ceying/chx/NcypBankBizApplication.java">
+      <file leaf-file-name="SinkApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ncyp-company-stream/src/main/java/com/ceying/chx/SinkApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ncyp-company-stream/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ncyp-company-triagreement/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/ncyp-company-config-server/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
               <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
@@ -119,14 +105,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NcypCompanyGatewayApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ncyp-company-gateway/src/main/java/com/ceying/chx/NcypCompanyGatewayApplication.java">
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ncyp-company-eureka/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="230">
+              <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ncyp-company-eureka/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NcypBankEurekaApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ncyp-company-eureka/src/main/java/com/ceying/chx/NcypBankEurekaApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#527#528#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#346#347#0" expanded="false" />
+                <element signature="e#413#414#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -140,6 +150,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Received</find>
+    </findStrings>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -161,6 +176,20 @@
         <option value="$PROJECT_DIR$/ncyp-company-gateway/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/ncyp-company-biz/src/main/java/com/ceying/chx/biz/base/feign/UserFeginClient.java" />
         <option value="$PROJECT_DIR$/ncyp-company-biz/src/main/java/com/ceying/chx/biz/base/controller/HelloController.java" />
+        <option value="$PROJECT_DIR$/ncyp-company-sleuth/pom.xml" />
+        <option value="$PROJECT_DIR$/ncyp-company-config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/ncyp-company-bus/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/ncyp-company-stream/pom.xml" />
+        <option value="$PROJECT_DIR$/ncyp-company-stream/src/main/java/com/ceying/chx/NcypBankBizApplication.java" />
+        <option value="$PROJECT_DIR$/ncyp-company-stream/src/main/java/com/ceying/chx/SinkApplication .java" />
+        <option value="$PROJECT_DIR$/ncyp-company-stream/src/main/java/com/ceying/chx/SinkApplication.java" />
+        <option value="$PROJECT_DIR$/ncyp-company-stream/src/main/java/com/ceying/chx/config/SinkReceiver.java" />
+        <option value="$PROJECT_DIR$/ncyp-company-stream/src/test/java/com.ceying.chx/TestStream.java" />
+        <option value="$PROJECT_DIR$/ncyp-company-stream/src/test/java/com.ceying.chx/SinkApplicationTests.java" />
+        <option value="$PROJECT_DIR$/ncyp-company-config-server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ncyp-company-eureka/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ncyp-company-stream/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -178,11 +207,38 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="ncyp-company-eureka" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="ncyp-company-eureka" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="2391" />
-    <option name="y" value="-9" />
-    <option name="width" value="3218" />
-    <option name="height" value="1318" />
+    <option name="width" value="1618" />
+    <option name="height" value="1309" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -199,6 +255,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -221,7 +278,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ncyp-company-gateway" />
+              <option name="myItemId" value="ncyp-company-stream" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -235,7 +292,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ncyp-company-gateway" />
+              <option name="myItemId" value="ncyp-company-stream" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ncyp-company" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ncyp-company" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ncyp-company-stream" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -261,7 +336,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ncyp-company-gateway" />
+              <option name="myItemId" value="ncyp-company-stream" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -291,77 +366,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ncyp-company-biz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ncyp-company" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ncyp-company" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ncyp-company-biz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ncyp-company" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ncyp-company" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ncyp-company-biz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ncyp-company" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ncyp-company" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ncyp-company-biz" />
+              <option name="myItemId" value="ncyp-company-stream" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -381,7 +386,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="base" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -395,7 +400,43 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ncyp-company-biz" />
+              <option name="myItemId" value="ncyp-company-eureka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ncyp-company" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ncyp-company" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ncyp-company-eureka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ncyp-company" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ncyp-company" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ncyp-company-eureka" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -412,22 +453,13 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="chx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -454,7 +486,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.gateway8182">
+  <component name="RunManager" selected="Spring Boot.SinkApplication">
     <configuration default="false" name="NcypBankBizApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -465,6 +497,44 @@
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ceying.chx.NcypBankBizApplication" />
       <module name="ncyp-company-triagreement" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="SinkApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ceying.chx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ceying.chx.SinkApplication" />
+      <module name="ncyp-company-stream" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="SinkApplicationTests.sinkSenderTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ceying.chx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ncyp-company-stream" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ceying.chx" />
+      <option name="MAIN_CLASS_NAME" value="com.ceying.chx.SinkApplicationTests" />
+      <option name="METHOD_NAME" value="sinkSenderTester" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -704,6 +774,7 @@
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
       <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -789,6 +860,28 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
       <method />
     </configuration>
@@ -835,6 +928,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -909,7 +1008,7 @@
       <envs />
       <method />
     </configuration>
-    <list size="7">
+    <list size="9">
       <item index="0" class="java.lang.String" itemvalue="Spring Boot.NcypBankFrontApplication" />
       <item index="1" class="java.lang.String" itemvalue="Spring Boot.NcypBankEurekaApplication" />
       <item index="2" class="java.lang.String" itemvalue="Spring Boot.NcypBankBizApplication" />
@@ -917,10 +1016,14 @@
       <item index="4" class="java.lang.String" itemvalue="Spring Boot.gateway8181" />
       <item index="5" class="java.lang.String" itemvalue="Spring Boot.gateway8182" />
       <item index="6" class="java.lang.String" itemvalue="Spring Boot.NcypBankBizApplication (1)" />
+      <item index="7" class="java.lang.String" itemvalue="Spring Boot.SinkApplication" />
+      <item index="8" class="java.lang.String" itemvalue="JUnit.SinkApplicationTests.sinkSenderTester" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Spring Boot.NcypBankBizApplication (1)" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Spring Boot.SinkApplication" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SinkApplicationTests.sinkSenderTester" />
+        <item index="2" class="java.lang.String" itemvalue="Spring Boot.NcypBankBizApplication (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -935,57 +1038,63 @@
       <option name="presentableId" value="Default" />
       <updated>1519885888672</updated>
       <workItem from="1519885891730" duration="7496000" />
+      <workItem from="1520231177340" duration="9098000" />
+      <workItem from="1520299343791" duration="2656000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="SinkApplicationTests_sinkSenderTester - 2018.03.05 at 16h 22m 30s.xml">
+      <configuration name="SinkApplicationTests.sinkSenderTester" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7496000" />
+    <option name="totallyTimeSpent" value="19250000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2391" y="-9" width="3218" height="1318" extended-state="6" />
-    <editor active="true" />
+    <frame x="2391" y="0" width="1618" height="1309" extended-state="0" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Tail" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22394678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Tail" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39948007" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.520524" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925764" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2396373" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1003,112 +1112,101 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ncyp-company-gateway/pom.xml">
+    <entry file="file://$PROJECT_DIR$/ncyp-company-stream/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="38" column="71" lean-forward="false" selection-start-line="38" selection-start-column="71" selection-end-line="38" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
         <state />
       </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="28" column="21" lean-forward="false" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ncyp-company-gateway/src/main/java/com/ceying/chx/controller/HelloController.java">
+    <entry file="file://$PROJECT_DIR$/ncyp-company-stream/src/main/java/com/ceying/chx/config/SinkReceiver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="15" />
+        <state relative-caret-position="345">
+          <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#443#444#0" expanded="false" />
-            <element signature="e#501#502#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ncyp-company-front/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ncyp-company-biz/src/main/java/com/ceying/chx/biz/base/controller/OrganizationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ncyp-company-triagreement/src/main/java/com/ceying/chx/biz/tripartiteAgreementTemplate/controller/HelloController.java">
+    <entry file="file://$PROJECT_DIR$/ncyp-company-stream/src/test/java/com.ceying.chx/SinkApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-          <folding>
-            <element signature="e#501#502#0" expanded="true" />
-            <element signature="e#558#559#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ncyp-company-gateway/src/main/java/com/ceying/chx/NcypCompanyGatewayApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ncyp-company-biz/src/main/java/com/ceying/chx/NcypBankBizApplication.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-stream/1.3.0.RELEASE/spring-cloud-stream-1.3.0.RELEASE.jar!/org/springframework/cloud/stream/messaging/Sink.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="138">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ncyp-company-biz/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ncyp-company-triagreement/src/main/java/com/ceying/chx/NcypBankBizApplication.java">
+    <entry file="file://$PROJECT_DIR$/ncyp-company-stream/src/main/java/com/ceying/chx/SinkApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ncyp-company-triagreement/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ncyp-company-gateway/src/main/java/com/ceying/chx/config/AccessFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-            <element signature="e#485#486#0" expanded="true" />
-            <element signature="e#509#510#0" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-stream/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="39" lean-forward="false" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-config-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-eureka/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-eureka/src/main/java/com/ceying/chx/NcypBankEurekaApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#346#347#0" expanded="false" />
+            <element signature="e#413#414#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-eureka/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1116,31 +1214,300 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ncyp-company-biz/src/main/java/com/ceying/chx/biz/base/feign/UserFeginClient.java">
+    <entry file="file://$PROJECT_DIR$/ncyp-company-gateway/src/main/java/com/ceying/chx/config/AccessFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="483">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-biz/src/main/java/com/ceying/chx/NcypBankBizApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-triagreement/src/main/java/com/ceying/chx/biz/tripartiteAgreementTemplate/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-biz/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-triagreement/src/main/java/com/ceying/chx/NcypBankBizApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-triagreement/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-gateway/src/main/java/com/ceying/chx/NcypCompanyGatewayApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ncyp-company-biz/src/main/java/com/ceying/chx/biz/base/controller/HelloController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
+        <state relative-caret-position="506">
           <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-gateway/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="28" column="21" lean-forward="false" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-gateway/src/main/java/com/ceying/chx/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-front/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-biz/src/main/java/com/ceying/chx/biz/base/controller/OrganizationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-triagreement/src/main/java/com/ceying/chx/biz/tripartiteAgreementTemplate/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-gateway/src/main/java/com/ceying/chx/NcypCompanyGatewayApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-biz/src/main/java/com/ceying/chx/NcypBankBizApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-biz/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-triagreement/src/main/java/com/ceying/chx/NcypBankBizApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-triagreement/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-gateway/src/main/java/com/ceying/chx/config/AccessFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-gateway/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-biz/src/main/java/com/ceying/chx/biz/base/feign/UserFeginClient.java" />
+    <entry file="file://$PROJECT_DIR$/ncyp-company-biz/src/main/java/com/ceying/chx/biz/base/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-sleuth/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-config-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-bus/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-stream/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="38" column="71" lean-forward="false" selection-start-line="38" selection-start-column="71" selection-end-line="38" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-stream/src/main/java/com/ceying/chx/SinkApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
-            <element signature="e#636#637#0" expanded="true" />
-            <element signature="e#697#698#0" expanded="true" />
-            <element signature="e#740#741#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-eureka/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-eureka/src/main/java/com/ceying/chx/NcypBankEurekaApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#346#347#0" expanded="false" />
+            <element signature="e#413#414#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-stream/1.3.0.RELEASE/spring-cloud-stream-1.3.0.RELEASE.jar!/org/springframework/cloud/stream/messaging/Sink.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-stream/src/test/java/com.ceying.chx/SinkApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-config-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-eureka/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-stream/src/main/java/com/ceying/chx/config/SinkReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="16" column="71" lean-forward="false" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncyp-company-stream/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -7,10 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ncyp-company-biz" />
+        <module name="ncyp-company-bus" />
         <module name="ncyp-company-common" />
+        <module name="ncyp-company-config-server" />
         <module name="ncyp-company-eureka" />
         <module name="ncyp-company-front" />
         <module name="ncyp-company-gateway" />
+        <module name="ncyp-company-sleuth" />
+        <module name="ncyp-company-stream" />
         <module name="ncyp-company-triagreement" />
         <module name="ncyp-company-webx" />
       </profile>
@@ -18,10 +22,14 @@
     <bytecodeTargetLevel>
       <module name="ncyp-company" target="1.6" />
       <module name="ncyp-company-biz" target="1.8" />
+      <module name="ncyp-company-bus" target="1.8" />
       <module name="ncyp-company-common" target="1.8" />
+      <module name="ncyp-company-config-server" target="1.8" />
       <module name="ncyp-company-eureka" target="1.8" />
       <module name="ncyp-company-front" target="1.8" />
       <module name="ncyp-company-gateway" target="1.8" />
+      <module name="ncyp-company-sleuth" target="1.8" />
+      <module name="ncyp-company-stream" target="1.8" />
       <module name="ncyp-company-triagreement" target="1.8" />
       <module name="ncyp-company-webx" target="1.5" />
     </bytecodeTargetLevel>
