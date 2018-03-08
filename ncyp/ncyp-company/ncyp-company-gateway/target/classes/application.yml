@@ -1,12 +1,17 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone:  http://peer1:8761/eureka/,http://peer2:8762/eureka/,http://peer3:8763/eureka/
+      defaultZone:  http://peer1:8761/eureka/ #,http://peer2:8762/eureka/,http://peer3:8763/eureka/
 server:
   port: 8182
 spring:
   application:
     name: ncyp-company-gateway
+  sleuth:
+    sampler:
+      percentage: 1.0
+  zipkin:
+    base-url: http://localhost:8774
 
 # 关闭安全限制
 management:
@@ -26,3 +31,10 @@ zuul:
 ribbon:
   ReadTimeout: 30000
   ConnectTimeout: 30000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000

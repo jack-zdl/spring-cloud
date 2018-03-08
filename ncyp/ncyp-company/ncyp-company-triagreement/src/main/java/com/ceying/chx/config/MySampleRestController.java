@@ -1,7 +1,10 @@
 package com.ceying.chx.config;
 
+import com.ceying.chx.fegin.UserFeginClient;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,9 +21,22 @@ public class MySampleRestController {
     @Value("${my-config.appName}")
     private String appName;
 
+    /**
+     * 使用feign的方式调用api
+     */
+    @Autowired
+    private
+    UserFeginClient userFeginClient;
+
     @RequestMapping("/app-name")
     public String getAppName() {
         System.out.println(appName);
         return appName;
+    }
+
+
+    @GetMapping("/hi")
+    public String hi(){
+        return userFeginClient.getAppName();
     }
 }

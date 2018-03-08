@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/ncyp-company-eureka/ncyp-company-eureka.iml" filepath="$PROJECT_DIR$/ncyp-company-eureka/ncyp-company-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/ncyp-company-front/ncyp-company-front.iml" filepath="$PROJECT_DIR$/ncyp-company-front/ncyp-company-front.iml" />
       <module fileurl="file://$PROJECT_DIR$/ncyp-company-gateway/ncyp-company-gateway.iml" filepath="$PROJECT_DIR$/ncyp-company-gateway/ncyp-company-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-company-hystrix-dashboard/ncyp-company-hystrix-dashboard.iml" filepath="$PROJECT_DIR$/ncyp-company-hystrix-dashboard/ncyp-company-hystrix-dashboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/ncyp-company-sleuth/ncyp-company-sleuth.iml" filepath="$PROJECT_DIR$/ncyp-company-sleuth/ncyp-company-sleuth.iml" />
       <module fileurl="file://$PROJECT_DIR$/ncyp-company-stream/ncyp-company-stream.iml" filepath="$PROJECT_DIR$/ncyp-company-stream/ncyp-company-stream.iml" />
       <module fileurl="file://$PROJECT_DIR$/ncyp-company-triagreement/ncyp-company-triagreement.iml" filepath="$PROJECT_DIR$/ncyp-company-triagreement/ncyp-company-triagreement.iml" />

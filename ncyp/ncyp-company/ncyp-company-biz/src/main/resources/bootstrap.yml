@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: ncyp-company-biz
+  cloud:
+    config:
+      uri:  http://localhost:8768
+#server:
+#  port: 8186
+      ## 必须使用bootstrap.yml

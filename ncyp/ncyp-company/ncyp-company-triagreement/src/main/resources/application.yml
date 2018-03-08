@@ -6,7 +6,7 @@ server:
   port: 8186   # 6-8
 spring:
   application:
-    name: my-client # ncyp-company-triagreement
+    name: ncyp-company-triagreement #my-client # ncyp-company-triagreement
   datasource:
 
     url: jdbc:mysql://192.168.6.253:3306/ncyp?characterEncoding=utf8&useSSL=false
@@ -19,9 +19,11 @@ spring:
     timeout: 36000
   session:
     store-type: redis
-#  cloud:
-#    config:
-#      uri:  http://localhost:8768
+  zipkin:
+    base-url: http://localhost:8774
+  sleuth:
+    sampler:
+      percentage: 1.0
 mybatis:
   mapperLocations: classpath:mapping/*.xml
   type-aliases-package: com.ceying.chx.common.dto,com.ceying.chx.common.dao,com.ceying.chx.common.entity
@@ -29,3 +31,5 @@ mybatis:
 management:
   security:
     enabled: false
+
+

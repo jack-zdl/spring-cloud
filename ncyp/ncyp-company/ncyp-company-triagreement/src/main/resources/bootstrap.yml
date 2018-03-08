@@ -1,6 +1,6 @@
 spring:
   application:
-    name: my-client
+    name: ncyp-company-triagreement   # 服务名称必须对应git的配置文件名称
   cloud:
     config:
       uri:  http://localhost:8768
