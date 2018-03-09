@@ -361,7 +361,7 @@
         bb.org_name manageidname
         from tsys_organization a,t_organizationrelation b,T_ORGANIZATIONCONTACTS c,T_CORECOMPANYQUOTA d,T_AREAS e,
         tsys_organization aa,tsys_organization bb,
-        TDICTIONARY t1,TDICTIONARY t2,TDICTIONARY t3，TDICTIONARY t4
+        TDICTIONARY t1,TDICTIONARY t2,TDICTIONARY t3,TDICTIONARY t4
         WHERE a.org_id=b.ourorgid and a.org_id=c.orgid and a.org_id=d.corecompanyid and a.areaid=e.urid and a.parent_id=aa.org_id and a.manage_id=bb.org_id
         and t1.l_keyno = '9999004' and t1.c_keyvalue=a.org_cate
         and t2.l_keyno = '9999005' and t2.c_keyvalue=a.org_level
