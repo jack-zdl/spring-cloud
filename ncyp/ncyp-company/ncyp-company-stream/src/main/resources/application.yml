@@ -5,12 +5,20 @@ eureka:
 server:
   port: 8765   # 4-7
 
-#spring:
-#  cloud:
-#    stream:
-#      bindings:
-#        output_channel:   #channelName
-#          destination: mydest   #destination，或者可以认为是发布－订阅模型里面的topic
+spring:
+  cloud:
+    stream:
+      bindings:
+        output:   #channelName
+          destination: mydest   #destination，或者可以认为是发布－订阅模型里面的topic
+
+      kafka:
+        binder:
+          zkNodes: 127.0.0.1
+          brokers: 127.0.0.1
+          input:
+            consumer:
+              resetOffsets: true
 #          binder: rabbit1
 #      binders:
 #        rabbit1:
@@ -19,7 +27,7 @@ server:
 #            spring:
 #              rabbitmq:
 #                host: 137.0.0.1
-#                port: 15672
+#                port: 5672
 #                username: guest
 #                password: guest
 #                virtual-host: /hostName

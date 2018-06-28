@@ -1,0 +1,17 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:  http://peer1:8761/eureka/ # ,http://peer2:8762/eureka/,http://peer3:8763/eureka/
+server:
+  port: 8189   # 6-8
+spring:
+  application:
+    name: ncyp-company-config-client-bus
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+management:
+  security:
+    enabled: false

@@ -8,12 +8,12 @@ spring:
   application:
     name: ncyp-company-biz
   datasource:
-    url: jdbc:mysql://192.168.6.253:3306/ncyp?characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://47.104.87.10:3306/ncyp?characterEncoding=utf8&useSSL=false
     username: root
-    password: manage
+    password:
     driver-class-name: com.mysql.jdbc.Driver
   redis:
-    host: localhost
+    host: 47.104.87.10
     port: 6379
     timeout: 36000
   session:
@@ -23,6 +23,34 @@ spring:
   sleuth:
     sampler:
       percentage: 1.0
+## stream 绑定一个接受消息的input管道
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: mydest
+          content-type: application/json
+
+      kafka:
+        binder:
+          zkNodes: 127.0.0.1
+          brokers: 127.0.0.1
+          input:
+            consumer:
+              resetOffsets: true
+
+#      binders:
+#        rabbit1:
+#          type: rabbit
+#          environment:
+#            spring:
+#              rabbitmq:
+#                host: 137.0.0.1
+#                port: 5672
+#                username: guest
+#                password: guest
+#                virtual-host: /hostName
+
 mybatis:
   mapperLocations: classpath:mapping/*.xml
   type-aliases-package: com.ceying.chx.common.dto,com.ceying.chx.common.dao,com.ceying.chx.common.entity
@@ -30,3 +58,14 @@ mybatis:
 management:
   security:
     enabled: false
+
+hystrix:
+  command:
+    scyp-system:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+ribbon:
+  ConnectTimeout: 50000
+  ReadTimeout: 50000

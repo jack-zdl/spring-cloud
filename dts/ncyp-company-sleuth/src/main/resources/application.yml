@@ -1,0 +1,9 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:  http://localhost:8761/eureka/ #,http://peer2:8762/eureka/,http://peer3:8763/eureka/
+server:
+  port: 8774  # 6-8
+spring:
+  application:
+    name: ncyp-sleuth

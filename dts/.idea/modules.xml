@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/dts.iml" filepath="$PROJECT_DIR$/dts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-company-biz/ncyp-company-biz.iml" filepath="$PROJECT_DIR$/ncyp-company-biz/ncyp-company-biz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-company-bus/ncyp-company-bus.iml" filepath="$PROJECT_DIR$/ncyp-company-bus/ncyp-company-bus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-company-config-server/ncyp-company-config-server.iml" filepath="$PROJECT_DIR$/ncyp-company-config-server/ncyp-company-config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-company-eureka/ncyp-company-eureka.iml" filepath="$PROJECT_DIR$/ncyp-company-eureka/ncyp-company-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-company-front/ncyp-company-front.iml" filepath="$PROJECT_DIR$/ncyp-company-front/ncyp-company-front.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-company-gateway/ncyp-company-gateway.iml" filepath="$PROJECT_DIR$/ncyp-company-gateway/ncyp-company-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-company-sleuth/ncyp-company-sleuth.iml" filepath="$PROJECT_DIR$/ncyp-company-sleuth/ncyp-company-sleuth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-company-stream/ncyp-company-stream.iml" filepath="$PROJECT_DIR$/ncyp-company-stream/ncyp-company-stream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-company-triagreement/ncyp-company-triagreement.iml" filepath="$PROJECT_DIR$/ncyp-company-triagreement/ncyp-company-triagreement.iml" />
+    </modules>
+  </component>
+</project>

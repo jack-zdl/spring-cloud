@@ -1,7 +1,7 @@
 server:
   port: 8083
 redisConfig:
-  host: localhost
+  host: 47.104.87.10
   password:
   port: 6379
   maxWaitMillis: 10000

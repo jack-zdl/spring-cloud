@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ceying.biz.dao.TripartiteAgreementDao">
+    <resultMap id="BaseResultMap" type="com.ceying.biz.entity.TripartiteAgreementEntity">
+    </resultMap>
+    <sql id="Base_Column_List">
+      t.urid, t.bankid, t.supplierid, t.corecompanyid, t.amount, t.payableno, t.financingamount, t.estimatereturndate, t.contractid, t.isrecourse
+    </sql>
+    <sql id="QuertList">
+        t.*,a.contractid,a.invoicenumber,a.amount,a.payabledate,
+        a.payableno,a.billdate,a.expiringdate,a.businesstype,a.financingamount,a.financingdate
+    </sql>
+    <select id="listTripartiteAgreement" parameterType="com.ceying.biz.dto.TripartiteDoneDto" resultType="TripartiteAgreementQuery" >
+        SELECT
+       <include refid="QuertList"/>
+        FROM t_biz_tripartiteagreement t,t_biz_accountspayable a
+        <where>
+            t.isactive = '1'
+            <if test="orgId != null">
+                and  ( t.bankid = #{orgId} or t.supplierid = #{orgId} or t.corecompanyid = #{orgId})
+            </if>
+            <if test="supplastoperateflag != null and corelastoperateflag != null and banklastoperateflag != null">
+                and  (t.supplastoperateflag != #{supplastoperateflag}
+                or t.corelastoperateflag != #{corelastoperateflag}
+                or t.banklastoperateflag != #{banklastoperateflag} )
+            </if>
+            and t.accountspayableid = a.urid
+        </where>
+    </select>
+
+    <select id="listDoneTripartiteAgreement" parameterType="com.ceying.biz.dto.TripartiteDoneDto" resultType="TripartiteAgreementDoneQuery" >
+        SELECT
+        <include refid="QuertList"/>
+        FROM t_biz_tripartiteagreement t,t_biz_accountspayable a
+        <where>
+            t.isactive = '1'
+            <if test="orgId != null  ">
+                and  ( t.bankid = #{orgId} or t.supplierid = #{orgId} or t.corecompanyid = #{orgId})
+            </if>
+            <if test="supplastoperateflag != null and corelastoperateflag != null and banklastoperateflag != null">
+                and  (t.supplastoperateflag = #{supplastoperateflag}
+                and t.corelastoperateflag = #{corelastoperateflag}
+                and t.banklastoperateflag = #{banklastoperateflag} )
+            </if>
+            and t.accountspayableid = a.urid
+        </where>
+    </select>
+
+    <select id="selectDoneTripartiteAgreement" parameterType="String" resultType="TripartiteAgreementDoneQuery">
+        select t.urid,t.signaturecontent,t.supplierid,t.bankid, a.amount ,a.contractid,a.payableno,
+                a.invoicenumber,a.billdate,a.expiringdate,a.payabledate,a.businesstype,
+                q.FINANCINGAMOUNT ,q.FINANCINGDATE
+        from t_biz_tripartiteagreement t
+	    left join T_biz_ACCOUNTSPAYABLE a on t.accountspayableid = a.urid
+	    left join T_biz_ACCOUNTSPAYABLEQUOTE q on t.accountspayablequoteid = q.urid
+        where   t.urid = #{urid}
+    </select>
+
+    <select id="listTripartiteAgreementById" parameterType="java.util.Map" resultType="TripartiteAgreementEntity" >
+        SELECT
+        *
+        FROM t_biz_tripartiteagreement t
+        <where>
+            isactive = '1'
+            <if test="#{orgId} != null">
+                and  ( bankid = #{orgId} or supplierid = #{orgId} or corecompanyid = #{orgId})
+            </if>
+        </where>
+    </select>
+
+    <select id="selectByUridList" resultType="TripartiteAgreementTaskQuery">
+        select t.urid,t.bankid,t.corecompanyid,t.supplierid,t.financingdate,t.tacontractid, a.contractid,a.invoicenumber,a.amount,a.payabledate,
+        a.payableno,a.billdate,a.expiringdate,a.businesstype,a.financingamount,a.financingdate
+        from t_biz_tripartiteagreement t ,t_biz_accountspayable a
+        where t.urid in
+        <foreach collection="list" open="(" close=")" separator="," item="urid" index="i">
+            #{urid}
+        </foreach>
+        and t.accountspayableid = a.urid
+    </select>
+
+    <select id="isApprovedById" parameterType="string">
+      SELECT
+      *
+      FROM t_biz_tripartiteagreement
+        <where>
+            isactive = '1'
+            <if test="#{orgId} != null">
+                and  ( bankid = #{orgId} or supplierid = #{orgId} or corecompanyid = #{orgId})
+            </if>
+        </where>
+    </select>
+
+    <update id="updateLendingdate" parameterType="string">
+        UPDATE t_biz_tripartiteagreement SET  lendingdate = null where urid = #{urid}
+    </update>
+
+    <select id="payableHaveActiveAgreement" parameterType="string" resultType="TripartiteAgreementEntity">
+        select t.* from t_biz_tripartiteagreement  t
+        where t.isactive = '1' and t.supplastoperateflag = '103'
+        and t.accountspayableid = #{accountspayableid}
+    </select>
+    <select id="sumFinancingamount"  resultType="String">
+        select sum(a.financingamount)
+        from T_BIZ_TRIPARTITEAGREEMENT a
+        where a.bankid=#{bankid}
+        and a.corecompanyid=#{corecompanyid}
+        and a.lendingdate is not null
+    </select>
+    <select id="listAllTest"  resultType="TripartiteAgreementEntity">
+        select *
+        from t_biz_tripartiteagreement
+    </select>
+
+    <select id="betTest"  resultType="TripartiteAgreementEntity">
+        select *
+        from t_biz_tripartiteagreement
+        where urid BETWEEN '0cdcae53d83745b2bd290b11b6ba4292' AND '3562a7fa0afb4721bd2fa384b3ddd3d8';
+    </select>
+
+    <select id="inTest"  resultType="TripartiteAgreementEntity">
+        select *
+        from t_biz_tripartiteagreement
+        where  urid in ("0cdcae53d83745b2bd290b11b6ba4292","3562a7fa0afb4721bd2fa384b3ddd3d8")
+    </select>
+
+    <insert id="insertTripartite" >
+        insert into t_biz_tripartiteagreement
+        (urid,tenantid,tatemplateid,accountspayableid,tacontractid,
+        bankid,corecompanyid,supplierid,
+        supplieraccountid,financingamount,financingdate,
+        isrecourse,interestrate,
+        supplierrate,corecompanyrate,isactive,createdby,
+        createdon
+        )
+         values
+        (
+          #{urid}, #{tenantid}, #{tatemplateid}, #{accountspayableid}, #{tacontractid}
+          , #{bankid}, #{corecompanyid}, #{supplierid},
+           #{supplieraccountid}, #{financingamount}, #{financingdate}
+          , #{isrecourse}, #{interestrate},
+           #{supplierrate}, #{corecompanyrate}, #{isactive}, #{createdby}
+           , #{createdon}
+        )
+    </insert>
+</mapper>

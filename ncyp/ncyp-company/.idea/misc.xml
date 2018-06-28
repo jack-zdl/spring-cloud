@@ -10,8 +10,20 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/ncyp-company-hystrix-dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/ncyp-company-quartz/pom.xml" />
+        <option value="$PROJECT_DIR$/scyp-common-sharding/pom.xml" />
+        <option value="$PROJECT_DIR$/scyp-biz-sharding-read-write/pom.xml" />
+        <option value="$PROJECT_DIR$/scyp-biz-sharding-tx/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/scyp-biz-sharding/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/scyp-biz-sharding-test/pom.xml" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/classes" />

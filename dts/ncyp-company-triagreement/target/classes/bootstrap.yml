@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: ncyp-company-triagreement   # 服务名称必须对应git的配置文件名称
+  cloud:
+    config:
+      uri:  http://localhost:8768
+#server:
+#  port: 8186
+      ## 必须使用bootstrap.yml

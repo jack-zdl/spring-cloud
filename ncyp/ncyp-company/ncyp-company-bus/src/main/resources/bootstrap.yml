@@ -4,6 +4,7 @@ spring:
   cloud:
     config:
       uri:  http://localhost:8768
+      name: ncyp-company-config-client-bus
 #server:
 #  port: 8186
       ## 必须使用bootstrap.yml

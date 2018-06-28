@@ -21,16 +21,17 @@ public class TestController {
     private RpcConfig rpcConfig;
     @RequestMapping("/test")
     public String test(){
+        String name = null;
         try {
             HelloService service=rpcServiceFactory.createByName(HelloService.class,"provice");
-            String name=service.hello("asdas");
+            name=service.hello("asdas");
             System.out.println(name);
             System.out.println("==========:"+JSONObject.toJSONString(rpcConfig.getRegistAddress()));
 
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return "hello";
+        return name;
     }
     @RequestMapping("/test1")
     public String test1(){

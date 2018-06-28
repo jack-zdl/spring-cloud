@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ceying.biz.dao.AccountsPayableDao">
+    <resultMap id="BaseResultMap" type="com.ceying.biz.entity.AccountsPayableEntity">
+    </resultMap>
+
+    <!--分页查询-->
+    <select id="listAccountsPayable" parameterType="AccountsPayableVo" resultType="AccountsPayableEntity">
+        SELECT *
+        from t_biz_accountspayable
+        <where>
+            <if test="invoicenumber != null">
+                and invoicenumber = #{invoicenumber}
+            </if>
+        </where>
+    </select>
+
+    <!--通过发票号查询-->
+    <select id="existInvoiceNumber"  resultType="int">
+        SELECT COUNT(1)
+        from t_biz_accountspayable
+        <where>
+            <if test="invoicenumber != null">
+                and invoicenumber = #{invoicenumber}
+            </if>
+        </where>
+    </select>
+
+    <select id="selectByUrid"  resultType="AccountsPayableEntity">
+        SELECT *
+        from t_biz_accountspayable
+        <where>
+            <if test="urid != null">
+                and urid = #{urid}
+            </if>
+        </where>
+    </select>
+
+    <select id="selectPayableAndQuote"  resultType="PayableAndQuoteQuery">
+        select a.*,q.urid as quoteurid,q.financingdate as quotefinancingdate,q.recourseinterestrate,q.nonrecourseinterestrate,q.isrecourse
+        from t_biz_accountspayable a LEFT join t_biz_accountspayablequote q
+        on  q.accountspayableid = a.urid
+        <where>
+            <if test="urid != null">
+                and a.urid = #{urid}
+            </if>
+            and q.isactive = '1'
+            <if test="bankid != null">
+                and q.bankid = #{bankid}
+            </if>
+        </where>
+    </select>
+
+
+    <select id="listPayableAndQuote" parameterType="QuoteVO" resultType="PayableAndQuoteQuery">
+        select a.*,q.urid as quoteurid,q.financingdate as quotefinancingdate,q.isrecourse,q.lastoperationflag as quoteoperateflag,q.financingamount as quoteamount,q.bankid as quotebankid,
+        (case when q.nonrecourseinterestrate =0 then q.recourseinterestrate else q.nonrecourseinterestrate end)*100 as interestratel
+        from t_biz_accountspayable a LEFT join t_biz_accountspayablequote q
+        on  q.accountspayableid = a.urid
+        <where>
+            <if test="supplierid != null">
+                and a.supplierid = #{supplierid}
+            </if>
+            and q.isactive = '1'
+            <if test="corecompanyid != null">
+                and a.corecompanyid = #{corecompanyid}
+            </if>
+            ORDER BY a.lastmodifiedon desc
+        </where>
+    </select>
+
+    <select id="selectByUridList" resultType="AccountsPayableEntity">
+        select *
+        from t_biz_accountspayable
+        where urid in
+        <foreach collection="list" open="(" close=")" separator="," item="urid" index="i">
+            #{urid}
+        </foreach>
+    </select>
+
+    <select id="selectPayableAndQuoteList" resultType="AccountsPayableTasksQuery">
+        select a.urid,a.corecompanyid,a.supplierid,a.contractid,a.invoicenumber,a.amount,a.payabledate,
+        a.payableno,a.lastoperationflag,q.urid as quoteurid,q.financingdate as quotebankid
+        from t_biz_accountspayable a LEFT join t_biz_accountspayablequote q
+        on  q.accountspayableid = a.urid
+        where a.urid in
+        <foreach collection="list" open="(" close=")" separator="," item="urid" index="i">
+            #{urid}
+        </foreach>
+        and q.isactive = '1'
+        <if test="bankid != null">
+            and q.bankid = #{bankid}
+        </if>
+
+    </select>
+
+    <!--查询供应商待办总数-->
+    <select id="selectPayableCount" resultType="AccountsPayableTasksQuery">
+        SELECT COUNT(1) as total, corecompanyid
+        FROM t_biz_accountspayable
+        WHERE supplierid = #{supplierid} AND lastoperationflag IN
+        <foreach collection="list" open="(" close=")" separator="," item="lastoperationflag" index="i">
+            #{lastoperationflag}
+        </foreach>
+        and isactive = '1'
+        GROUP BY corecompanyid
+    </select>
+
+    <delete id="deleteByUrid" >
+        DELETE FROM t_biz_accountspayable
+        <where>
+            <if test="urid != null">
+                and urid = #{urid}
+            </if>
+        </where>
+    </delete>
+
+    <select id="listAccBySql" parameterType="String" resultType="AccountsPayableEntity">
+        ${value}
+    </select>
+
+    <!--查询供应商待办总数-->
+    <select id="listExpireAccountsPayable" resultType="AccountsPayableEntity">
+        SELECT
+        *
+        FROM
+        t_biz_accountspayable t
+    </select>
+
+    <select id="listByUrid" resultType="TripartiteAgreementQuery">
+   select t1.* from
+(select a.* from t_biz_accountspayable a left join t_biz_accountspayablequote q
+ on a.urid = q.accountspayableid
+ where a.supplierid= #{orgId} and a.isactive = '1' and a.lastoperationflag in ('202','401','402') and q.lastoperationflag = '302'  and q.isactive = '1' ) t1
+    </select>
+</mapper>

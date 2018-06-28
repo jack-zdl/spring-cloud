@@ -28,6 +28,8 @@
         <module>ncyp-company-sleuth</module>
         <module>ncyp-company-config-server</module>
         <module>ncyp-company-bus</module>
+        <module>scyp-biz-sharding-test</module>
+        <module>scyp-biz-sharding-read-write</module>
     </modules>
 
 </project>

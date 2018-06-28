@@ -1,0 +1,17 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:  http://peer1:8761/eureka/,http://peer2:8762/eureka/,http://peer3:8763/eureka/
+
+server:
+  port: 8183
+
+spring:
+  application:
+    name: ncyp-bank-front
+  redis:
+      host: localhost
+      port: 6379
+      timeout: 36000
+  session:
+    store-type: redis

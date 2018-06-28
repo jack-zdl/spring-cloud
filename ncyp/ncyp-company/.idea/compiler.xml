@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ncyp-company-biz" />
+        <module name="ncyp-company-biz (1)" />
         <module name="ncyp-company-bus" />
         <module name="ncyp-company-common" />
         <module name="ncyp-company-config-server" />
@@ -14,15 +15,21 @@
         <module name="ncyp-company-front" />
         <module name="ncyp-company-gateway" />
         <module name="ncyp-company-hystrix-dashboard" />
+        <module name="ncyp-company-quartz" />
         <module name="ncyp-company-sleuth" />
         <module name="ncyp-company-stream" />
         <module name="ncyp-company-triagreement" />
         <module name="ncyp-company-webx" />
+        <module name="scyp-biz-sharding-read-write" />
+        <module name="scyp-biz-sharding-test" />
+        <module name="scyp-biz-sharding-tx" />
+        <module name="scyp-common-sharding" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ncyp-company" target="1.6" />
       <module name="ncyp-company-biz" target="1.8" />
+      <module name="ncyp-company-biz (1)" target="1.5" />
       <module name="ncyp-company-bus" target="1.8" />
       <module name="ncyp-company-common" target="1.8" />
       <module name="ncyp-company-config-server" target="1.8" />
@@ -30,10 +37,16 @@
       <module name="ncyp-company-front" target="1.8" />
       <module name="ncyp-company-gateway" target="1.8" />
       <module name="ncyp-company-hystrix-dashboard" target="1.8" />
+      <module name="ncyp-company-quartz" target="1.8" />
       <module name="ncyp-company-sleuth" target="1.8" />
       <module name="ncyp-company-stream" target="1.8" />
       <module name="ncyp-company-triagreement" target="1.8" />
       <module name="ncyp-company-webx" target="1.5" />
+      <module name="scyp-biz-sharding" target="1.8" />
+      <module name="scyp-biz-sharding-read-write" target="1.8" />
+      <module name="scyp-biz-sharding-test" target="1.8" />
+      <module name="scyp-biz-sharding-tx" target="1.8" />
+      <module name="scyp-common-sharding" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

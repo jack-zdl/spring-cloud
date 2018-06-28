@@ -1,0 +1,32 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:  http://peer1:8761/eureka/ # ,http://peer2:8762/eureka/,http://peer3:8763/eureka/
+server:
+  port: 8183    # 3-5
+spring:
+  application:
+    name: ncyp-company-biz
+  datasource:
+    url: jdbc:mysql://192.168.6.253:3306/ncyp?characterEncoding=utf8&useSSL=false
+    username: root
+    password: manage
+    driver-class-name: com.mysql.jdbc.Driver
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 36000
+  session:
+    store-type: redis
+  zipkin:
+    base-url: http://localhost:8774
+  sleuth:
+    sampler:
+      percentage: 1.0
+mybatis:
+  mapperLocations: classpath:mapping/*.xml
+  type-aliases-package: com.ceying.chx.common.dto,com.ceying.chx.common.dao,com.ceying.chx.common.entity
+## 当post /refresh方式刷新配置 时 ，会有个安全限制，关掉就可以了
+management:
+  security:
+    enabled: false

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ncyp-bank.iml" filepath="$PROJECT_DIR$/ncyp-bank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-bank-biz/ncyp-bank-biz.iml" filepath="$PROJECT_DIR$/ncyp-bank-biz/ncyp-bank-biz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-bank-common/ncyp-bank-common.iml" filepath="$PROJECT_DIR$/ncyp-bank-common/ncyp-bank-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-bank-eureka/ncyp-bank-eureka.iml" filepath="$PROJECT_DIR$/ncyp-bank-eureka/ncyp-bank-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-bank-front/ncyp-bank-front.iml" filepath="$PROJECT_DIR$/ncyp-bank-front/ncyp-bank-front.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ncyp-bank-webx/ncyp-bank-webx.iml" filepath="$PROJECT_DIR$/ncyp-bank-webx/ncyp-bank-webx.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,89 @@
+server:
+  port: 8200
+spring:
+  application:
+    name: scyp-biz-read
+  kafka:
+    bootstrap-servers: localhost:9092
+    max.block.ms: 20000000
+    max.request.size: 20000000
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: com.ceying.eagleeye.common.serizable.kafka.HessianDeserializer
+      group-id: springboot-group1
+    producer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: com.ceying.eagleeye.common.serizable.kafka.HessianDeserializer
+#logging:
+#  level:
+#    com:
+#      ceying:
+#        biz:
+#          feign:
+#            SystemFeignClient: DEBUG
+  datasource:
+    primary:
+      name: testdb0
+      url: jdbc:mysql://47.104.87.10:3306/ncyp?characterEncoding=utf8&useSSL=false
+      username: root
+      password:
+      driver-class-name: com.mysql.jdbc.Driver
+    secondary:
+      name: testdb1
+      url: jdbc:mysql://127.0.0.1:3306/biz?characterEncoding=utf8&useSSL=false
+      username: root
+      password:
+      driver-class-name: com.mysql.jdbc.Driver
+  redis:
+      host: 47.104.87.10
+      port: 6379
+      timeout: 36000
+      database: 0
+      password:
+  jackson:
+        date-format: yyyy-MM-dd HH:mm:ss
+        time-zone: GMT+8
+  cache:
+    type: redis
+    database: 1
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+#    prefer-ip-address: true
+#    appname: scyp-user
+
+mybatis:
+  mapperLocations: classpath:mapping/*.xml
+  type-aliases-package: com.ceying.biz.vo,com.ceying.biz.entity,com.ceying.biz.query #批量增设别名
+  config-location: classpath:config/mybatis-config.xml
+  dataSource: testdb0
+mapper:
+  mappers: com.ceying.common.util.mybatis.MyMapper
+  not-empty: false
+  identity: MYSQL
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+#配置logback日志
+logging:
+    config: classpath:config/logback-spring.xml
+feign:
+  httpclient:
+    enabled: true
+hystrix:
+  command:
+    scyp-system:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+ribbon:
+  ConnectTimeout: 50000
+  ReadTimeout: 50000

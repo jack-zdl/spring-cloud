@@ -3,6 +3,7 @@ package com.cyp.chx.rcenter.bean;
 import java.io.Serializable;
 
 /**
+ * rpc服务应答结构
  * @Author：huanghaiyun
  * @Date:2017/12/13
  */

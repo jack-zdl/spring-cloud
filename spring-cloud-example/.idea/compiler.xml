@@ -23,10 +23,20 @@
         <module name="microservice-provider-user (2)" />
         <module name="microservice-provider-user (3)" />
         <module name="microservice-simple-consumer-movie" />
-        <module name="microservice-simple-consumer-movie (1)" />
         <module name="microservice-simple-provider-user" />
-        <module name="microservice-simple-provider-user (1)" />
         <module name="spring-cloud2" />
+      </profile>
+      <profile name="Annotation profile for microservice-simple-provider-user (1)" enabled="true">
+        <sourceOutputDir name="../../spring-cloud1/microservice-simple-provider-user/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../spring-cloud1/microservice-simple-provider-user/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="microservice-simple-provider-user (1)" />
+      </profile>
+      <profile name="Annotation profile for spring-cloud-example" enabled="true">
+        <sourceOutputDir name="../../spring-cloud1/microservice-simple-consumer-movie/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../spring-cloud1/microservice-simple-consumer-movie/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="microservice-simple-consumer-movie (1)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -34,21 +44,21 @@
       <module name="microservice-consumer-movie (2)" target="1.5" />
       <module name="microservice-consumer-movie-feign" target="1.8" />
       <module name="microservice-consumer-movie-feign-customizing" target="1.8" />
-      <module name="microservice-consumer-movie-ribbon" target="1.6" />
-      <module name="microservice-consumer-movie-ribbon (1)" target="1.8" />
-      <module name="microservice-consumer-movie-ribbon-properties-customizing" target="1.6" />
+      <module name="microservice-consumer-movie-ribbon" target="1.5" />
+      <module name="microservice-consumer-movie-ribbon (1)" target="1.6" />
+      <module name="microservice-consumer-movie-ribbon-properties-customizing" target="1.5" />
       <module name="microservice-consumer-movie-ribbon-properties-customizing (1)" target="1.8" />
       <module name="microservice-discovery-eureka" target="1.5" />
-      <module name="microservice-discovery-eureka (1)" target="1.6" />
-      <module name="microservice-discovery-eureka (2)" target="1.8" />
+      <module name="microservice-discovery-eureka (1)" target="1.5" />
+      <module name="microservice-discovery-eureka (2)" target="1.6" />
       <module name="microservice-discovery-eureka-ha" target="1.8" />
-      <module name="microservice-provider-user" target="1.6" />
+      <module name="microservice-provider-user" target="1.5" />
       <module name="microservice-provider-user (1)" target="1.5" />
       <module name="microservice-provider-user (2)" target="1.5" />
-      <module name="microservice-provider-user (3)" target="1.8" />
-      <module name="microservice-simple-consumer-movie" target="1.8" />
+      <module name="microservice-provider-user (3)" target="1.6" />
+      <module name="microservice-simple-consumer-movie" target="1.6" />
       <module name="microservice-simple-consumer-movie (1)" target="1.8" />
-      <module name="microservice-simple-provider-user" target="1.8" />
+      <module name="microservice-simple-provider-user" target="1.6" />
       <module name="microservice-simple-provider-user (1)" target="1.8" />
       <module name="microservice-spring-cloud" target="1.8" />
       <module name="microservice-spring-cloud (1)" target="1.8" />

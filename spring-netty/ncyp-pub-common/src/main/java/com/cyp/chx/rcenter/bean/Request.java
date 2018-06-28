@@ -5,6 +5,8 @@ import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * 自定义协议request 内容体
+ *
+ * rpc服务请求结构
  * @Author：huanghaiyun
  * @Date:2017/12/13
  */

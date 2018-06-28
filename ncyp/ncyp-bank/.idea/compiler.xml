@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ncyp-bank-biz" />
+        <module name="ncyp-bank-common" />
+        <module name="ncyp-bank-eureka" />
+        <module name="ncyp-bank-front" />
+        <module name="ncyp-bank-webx" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ncyp-bank" target="1.6" />
+      <module name="ncyp-bank-biz" target="1.8" />
+      <module name="ncyp-bank-common" target="1.8" />
+      <module name="ncyp-bank-eureka" target="1.8" />
+      <module name="ncyp-bank-front" target="1.8" />
+      <module name="ncyp-bank-webx" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

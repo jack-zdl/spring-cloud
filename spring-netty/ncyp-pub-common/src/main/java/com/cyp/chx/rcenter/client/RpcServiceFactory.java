@@ -24,6 +24,14 @@ public class RpcServiceFactory {
      * @param <T>
      * @return
      */
+    /**
+     * 根据接口类型和服务名称 创建service
+     * @param interfaceClass
+     * @param serverName
+     * @param <T>
+     * @return
+     * @throws Exception
+     */
     public <T> T createByName(final Class<?> interfaceClass,String serverName) throws Exception {
         return createByName(interfaceClass,serverName,null);
     }

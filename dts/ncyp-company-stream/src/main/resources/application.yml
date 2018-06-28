@@ -1,0 +1,28 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:  http://localhost:8761/eureka/ # ,http://peer2:8762/eureka/,http://peer3:8763/eureka/
+server:
+  port: 8765
+spring:
+  application:
+    name:   sleuth
+
+#spring:
+#  cloud:
+#    stream:
+#      bindings:
+#        output_channel:   #channelName
+#          destination: mydest   #destination，或者可以认为是发布－订阅模型里面的topic
+#          binder: rabbit1
+#      binders:
+#        rabbit1:
+#          type: rabbit
+#          environment:
+#            spring:
+#              rabbitmq:
+#                host: 137.0.0.1
+#                port: 15672
+#                username: guest
+#                password: guest
+#                virtual-host: /hostName

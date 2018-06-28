@@ -22,9 +22,9 @@
       <module fileurl="file://$PROJECT_DIR$/spring-cloud2/microservice-simple-consumer-movie/microservice-simple-consumer-movie (1).iml" filepath="$PROJECT_DIR$/spring-cloud2/microservice-simple-consumer-movie/microservice-simple-consumer-movie (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud1/microservice-simple-provider-user/microservice-simple-provider-user.iml" filepath="$PROJECT_DIR$/spring-cloud1/microservice-simple-provider-user/microservice-simple-provider-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud2/microservice-simple-provider-user/microservice-simple-provider-user (1).iml" filepath="$PROJECT_DIR$/spring-cloud2/microservice-simple-provider-user/microservice-simple-provider-user (1).iml" />
-      <module fileurl="file://E:\ceying\CeYingProject\spring-cloud\spring-cloud-example\spring-cloud3\microservice-spring-cloud.iml" filepath="E:\ceying\CeYingProject\spring-cloud\spring-cloud-example\spring-cloud3\microservice-spring-cloud.iml" />
-      <module fileurl="file://E:\ceying\CeYingProject\spring-cloud\spring-cloud-example\spring-cloud4\microservice-spring-cloud (1).iml" filepath="E:\ceying\CeYingProject\spring-cloud\spring-cloud-example\spring-cloud4\microservice-spring-cloud (1).iml" />
-      <module fileurl="file://E:\ceying\CeYingProject\spring-cloud\spring-cloud-example\spring-cloud5\microservice-spring-cloud (2).iml" filepath="E:\ceying\CeYingProject\spring-cloud\spring-cloud-example\spring-cloud5\microservice-spring-cloud (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud3/microservice-spring-cloud.iml" filepath="$PROJECT_DIR$/spring-cloud3/microservice-spring-cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud4/microservice-spring-cloud (1).iml" filepath="$PROJECT_DIR$/spring-cloud4/microservice-spring-cloud (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud5/microservice-spring-cloud (2).iml" filepath="$PROJECT_DIR$/spring-cloud5/microservice-spring-cloud (2).iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-cloud-example.iml" filepath="$PROJECT_DIR$/.idea/spring-cloud-example.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud1/spring-cloud1.iml" filepath="$PROJECT_DIR$/spring-cloud1/spring-cloud1.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud2/spring-cloud2.iml" filepath="$PROJECT_DIR$/spring-cloud2/spring-cloud2.iml" />
